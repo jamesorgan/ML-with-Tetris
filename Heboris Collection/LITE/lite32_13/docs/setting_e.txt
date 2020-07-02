@@ -1,0 +1,431 @@
+Config screen english manual (incomplete)
+NOTE:This file contains many Engrish and computer translated texts.
+
+* Main menu
+[SAVE & EXIT]
+	Save settings and return to the title screen.
+
+[GAME SETTING]
+	Change game's behavior.
+
+[DISPLAY SETTING]
+	Change display settings.
+
+[SOUND SETTING]
+	Change sound related settings.
+
+[INPUT SETTING]
+	Change keyboard and joystick settings.
+
+[CUSTOM RULE]
+	Change "CUSTOM" rule's behavior.
+
+[FONT COLOR]
+	Change each rule's font color.
+
+[ITEM SWITCH]
+	Change item settings.
+
+[EDIT FAVORITES]
+	Change "FAVORITES" (Speed presets).
+
+[RESET SETTINGS TO C7 STYLE]
+	Change some of settings to C7**EX defaults.
+
+[SCREEN SETTING]
+	Change screen size.
+
+* GAME SETTING
+MAX PLAYER
+	This option can change how many players can play single player mode.
+	SINGLE: Only 1 player can play single player mode.
+	DUAL: Up to max 2 players can play single player mode.
+
+WORLD REVERSE
+	If this option is ON, each rotate button's direction is reversed in SRS rules.
+
+IRS WALLKICK
+	If this option is ON, an I tetromino can perform floor kick during the initial rotation.
+
+DOWN TYPE
+	Change continuation soft/hard drop limitations.
+	NO LIMIT: No limitations.
+	LIMIT:    Player can't do continuity soft/hard drop.
+	AUTO:     In 20G speed, player can't do continuity soft/hard drop.
+	          If not 20G speed, there are no limitations.
+
+NEXT PATTERN
+	Select tetromino randomizer.
+	RANDOM:          The tetromino generated completely random.
+	HEBO*:           Original Heboris's tetromino randomizer.
+	MEMORY4 (4 TRY): Old TGM randomizer.
+	MEMORY4 (6 TRY): New TGM randomizer.
+	7 PIECE BAG:     Also known as "Random Generator". Most guideline compatible games uses this.
+	TOMOYO:          Use Tomoyo mode's tetromino list in all modes.
+	DENGEN:          Use fixed tetromino pattern. ("DENGEN" means "Power-on Pattern")
+	DENGEN2:         Use another fixed tetromino pattern.
+
+8WAY INPUT
+	Allow/Disallow diagonal moves.
+
+SONIC DROP
+	Allow/Disallow hard drop function.
+
+INIT LR MOVE
+	Change initial sideways movement's behavior.
+	ON:    Enable regular initial sideways move.
+	OFF:   Disable any initial sideways move.
+	SUPER: Enable super initial sideways move. (A bit more powerful than regular one)
+	HYPER: Enable hyper initial sideways move. (You can move tetrominos even during the ARE!)
+
+LVUP BONUS
+	Change level up behavior in normal modes (Beginner, Master, Devil, and others).
+	+--------+--------+--------+
+	|Setting | Triple | Heboris|
+	+--------+--------+--------+
+	|OFF     | 3      | 4      |
+	+--------+--------+--------+
+	|ON      | 4      | 6      |
+	+--------+--------+--------+
+
+MAX FPS
+	Change max FPS (Frame Per Second).
+	If you change this option to smaller value, the game will slowdown.
+	If you change this option to larger value, the game will work faster.
+
+SPAWN Y TYPE
+	Change tetromino's spawn position.
+
+T-SPIN
+	Change T-Spin bonus recognition.
+	OFF:             No T-Spin
+	LINE CLEAR:      Clear a line using a T, with final action being rotation
+	IMMOBILE:        A T-tetromino locks in a position such that it cannot move left, right, or up without rotating
+	3-CORNER:        Three of the 4 squares diagonally adjacent to the T's center are occupied
+	3-CORNER NO KICK:Almost same as 3-CORNER. However, the final rotation must not involve a wall kick.
+
+WORLD LOCKDOWN
+	OLD TYPE: Use old compulsion fixation behavior.
+	NEW TYPE: Use new compulsion fixation behavior.
+
+WORLD SOFTLOCK
+	Enable/Disable lock delay cancel using down key. (As seen in Te*ris DS)
+	NORMAL:       Doesn't lock instantly, but lock delay increases faster.
+	INSTANT LOCK: Enable lock delay cancel using down key.
+	FASTER LOCK:  Doesn't lock instantly, but lock delay increases much faster.
+	NONE:         Nothing happens to lock delay.
+
+180 ROTATION
+	Enable/Disable 180 degree rotations. (Perform by C button)
+	OFF:          Disable in all rules.
+	ON:           Enable in all rules.
+	ONLY SP RULE: Enable only in special rules.
+
+ENABLE MIN SP
+	(Outdated option. Not currently used.)
+
+ENABLE HOLD
+	Enable/Disable hold function.
+
+T-SPIN BONUS
+	Enable/Disable T-Spin scoring bonus.
+	If it is OFF, T-Spin will not reward any bonus.
+
+B-T-B BONUS
+	Enable/Disable Back-to-Back bonus. (Heborises and T-Spins performed consecutively before any other line clear actions)
+
+IRS TYPE
+	Change initial rotation type.
+	NORMAL:       Standard initial rotation.
+	NEW (A TYPE): You can rotate the next tetoromino as many you want during the ARE.
+	NEW (B TYPE): Almost same as A type.
+	              However, if you use IRS and IHS at the same time, tetromino's orientation will not turn back to the default.
+	NEW (C TYPE): Almost same as B type.
+	              However, you can do initial rotation at the tetromino's shining moment (the locking animation).
+
+SKIP LOCKFLASH
+	Shortening the tetromino's shining moment (the locking animation).
+	OFF:    No shortening
+	ON:     Enable shortening
+	SUPER:  More shortening
+	ARCADE: Shorter than OFF, longer than ON
+
+DRS FLOOR KICK
+	Enable/Disable T/I tetromino's floor kick in DRS rules.
+
+SHOW END MENU
+	Enable/Disable the replay save menu after your game is end.
+	The menu will let you to save the replay beyond No.11.
+
+ITEM HOLD
+	Enable/Disable the item tetromino hold function.
+	INITAL OFF/NORMAL OFF: Item cannot be hold
+	INITAL  ON/NORMAL  ON: Item can hold
+	INITAL OFF/NORMAL  ON: Item can hold only in non-IHS
+	INITAL  ON/NORMAL OFF: Item can hold only in IHS
+
+FREE FALL RISE
+	Enable/Disable the garbage rising when the line cleared by an item "FREE FALL".
+
+VS GOAL LEVEL
+	Requried levels/lines to win in VS mode.
+
+VS GOAL TYPE
+	Level type in VS mode.
+
+VS TIME LIMIT
+	Time limit of VS mode. If the time limit reaches to zero, player with high levels/lines wins the game.
+
+VS ITEM
+	Enable/Disable the items in VS mode.
+
+VS RISE
+	Enable/Disable the garbage in VS mode.
+
+ITEM GAUGE UP
+	Change the item gauge behavior.
+	PUT BLOCK:            If you put the tetromino, the gauge increases.
+	PUT BLOCK/ERASE LINE: If you put the tetromino or clear the line, the gauge increases.
+	ERASE LINE:           If you clear the line, the gauge increases.
+
+ITEM INTERVAL
+	Change the item interval.
+
+SHOW RISE LINE
+	Shows how many garbage you'll receive.
+
+LACK BLOCK
+	If it is "GRAYOUT", the lacked blocks will turn into gray blocks. Useful in square mode.
+
+FAV DEFAULT
+	Select default speed preset in Practice, Simple, and Versus mode.
+
+NEXT SKIP
+	Enable/Disable next skip function.
+	If you press D button during the Ready screen, the next tetromino will move to hold box.
+	TOMOYO ONLY:    Enable in Tomoyo mode except in Flash course.
+	TOMOYO & FLASH: Enable in all courses of Tomoyo mode.
+	ON:             Enable in all modes.
+	OFF:            Disable in all modes.
+
+P LEVEL TYPE
+	Select Practice mode's level up type.
+
+P TIME LIMIT
+	Change Practice mode's time limit.
+
+P GOAL
+	Change Practice mode's goal.
+	If you reached to this goal, you'll see "EXCELLENT" and the game ends.
+
+P STAFF ROLL
+	If it is ON, you'll see staff credits in Practice mode if you reached to the goal.
+
+CPU PLAYER 1P
+	If it is ON, player #1 is controlled by an AI player.
+
+CPU PLAYER 2P
+	If it is ON, player #2 is controlled by an AI player.
+
+CPU LEVEL  1P
+	Change AI player #1 level.
+
+CPU LEVEL  2P
+	Change AI player #2 level.
+
+ENABLE COMBO
+	Enable/Disable combo bonus. (continuity line clear bonus)
+
+ENABLE IRS
+	Enable/Disable initial rotation action.
+
+AUTO SAVE
+	If it is ON, your play will automatically saved to LASTPLAY.SAV.
+
+* DISPLAY SETTING
+FIELD TR
+	Change translucent level of the background.
+
+BREAK EFFECT
+	Change line clear animation.
+	NO EFFECT:     Disable line clear animation.
+	POP OUT:       The block pops out from the playfield. Same as original Heboris's animation.
+	SHATTER:       The block shatters and disappears. You can select their graphics by "BREAK GRAPHICS".
+	SHATTER (OLD): Old version of SHATTER.
+	OLD STYLE:     The block blinks and disappears.
+
+BREAK GRAPHICS
+	Select line clear animation graphics to use in "SHATTER".
+
+NEXT DISPLAY
+	Change how many tetrominos can be seen in next piece preview area.
+
+RULE NAME TYPE
+	Change rule name set.
+	0: Old names
+	1: C7 names
+	2: LITE names
+
+SHOW FPS
+	Enable/Disable FPS (Frame Per Second) display.
+	OFF:     Disable
+	ON:      Enable
+	CAPTION: Shows FPS in title bar. (Invisible in full screen mode)
+
+SHOW CONTROL
+	Enable/Disable show player's input.
+	REPLAY ONLY: Only show in replay mode.
+	ON:          Enable in all mode.
+	OFF:         Disable in all mode.
+
+BACKGROUND
+	Enable/Disable background wallpaper display.
+
+GHOST PIECE
+	Enable/Disable ghost piece (aka. TLS)
+	LV100: Enable until level 100 in normal modes. (always enable in ace modes)
+	ON:    Always enable
+	OFF:   Always disable
+
+TOP FRAME
+	Change piece preview area graphics.
+
+SPIN FIELD
+	It will enable/disable field spin effect in empty playfield ("PRESS START BUTTON").
+
+MAX EFFECT
+	Change how many "Effect Objects" can be displayed.
+	If your game runs slow, change this value to smaller.
+
+SHOW GPOINT
+	It will enable/disable "Grade Points" display in Master-Normal mode.
+
+BLOCK FRAME
+	It will enable/disable current tetromino's blinking frame.
+	BLINK: Show blinking frame
+	ON:    Show non-blinking frame
+	OFF:   Don't show frame
+
+SHOW GRID
+	It will enable/disable grid display in field background.
+
+LANGUAGE
+	Select language. If you are non Japanese speaker, this option should be english.
+
+BACK TO BACK
+	Change Back-to-Back display. This setting only affect to the display.
+	OFF:                  Disable
+	ON:                   Enable (No chain display)
+	ON (WITH CHAIN DISP): Enable (With chain display)
+
+SCORE DISPLAY
+	Enable/Disable score display.
+
+GRADE DISPLAY
+	Enable/Disable grade display.
+
+BG FADE
+	Enable/Disable background fadein/fadeout effects.
+
+TOMOYO CLEAR
+	Change stage clear animation in Tomoyo mode. Note this animation is very long.
+
+BEGINNER BREAK
+	Change Beginner mode's line clear effect.
+	POP OUT:            Always use POP OUT effect.
+	USE NORMAL SETTING: Use "BREAK EFFECT" setting.
+
+NAVIGATION
+	Enable/Disable navigation system.
+	OFF:           No navigation
+	BEGINNER ONLY: Beginner mode only
+	ON:            Enable in all modes
+
+NAVI END LEVEL
+	Level that navigation ends.
+
+NAVI DISP TIME
+	How long navigation displayed.
+
+PAUSE FIELD
+	If it is "SHOW", you can see blocks in pause screen.
+
+PRACTICE BG
+	Practice mode's default background.
+
+DISP LAST LINE
+	Show how many lines cleared at the same time.
+
+HOLD FRAME
+	Change hold tetromino frame type.
+
+SHOW SEC-TIME
+	Enable/Disable section time display.
+
+TIMER FONT
+	Change timer font type.
+
+BLOCK SHADOW
+	Enable/Disable block shadow (aka. 3D-like objects)
+	Note: most people don't like it.
+
+AFTERIMAGE
+	Enable/Disable tetromino afterimages.
+	OFF:            None
+	HARD DROP ONLY: Show afterimage if you use hard drop
+	ON:             Always show afterimage
+
+ACE FRAME
+	Show decoration on the playfield in ACE mode.
+
+DISPLAY COMBO
+	Show number of combos.
+	OFF:    Disable
+	NORMAL: Enable
+	2LINES: Enable, only shows 2 or more lines combo.
+
+IGNORE BACK13
+	If it is ON, game will ignore back13.png, back14.png, and back15.png.
+	Enable it if you are using add-on background pack for C7 series.
+
+DISP WAITS
+	If it is ON, you can see current game speed during the game.
+
+DISP LINE INFO
+	Line erase information is displayed in the left of the screen by default when turning it on. 
+	(You can switch this feature by pushing stage skip key in the pause screen)
+
+REFRESH TIMING
+	Changes screen refresh & sound play timing.
+	AFTER GAME CYCLE:  Update after every game cycle.
+	BEFORE GAME CYCLE: Update before every game cycle.
+
+EFFECT SPEED
+	Changes line erase effect speed.
+	AUTO: The game automatically changes the effect speed by current tetromino speed.
+
+HIDDEN-B TYPE
+	Changes HIDDEN-B (Invisible Challenge) type.
+	NORMAL:  You can see "Tetromino frame" for a little time after the tetromino locks.
+	SPECIAL: No tetromino frame can be seen in this setting.
+
+* SOUND SETTING
+(Not yet documented...)
+
+* INPUT SETTING
+(Not yet documented...)
+
+* CUSTOM RULE
+(Not yet documented...)
+
+* FONT COLOR
+(Not yet documented...)
+
+* ITEM SWITCH
+(Not yet documented...)
+
+* EDIT FAVORITES
+(Not yet documented...)
+
+* SCREEN SETTING
+(Not yet documented...)

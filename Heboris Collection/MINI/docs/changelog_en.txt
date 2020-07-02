@@ -1,0 +1,71 @@
+Note: All dates are in JST, and the format is Japanese style. (ex. 08/04/09 means April 9, 2008)
+
++ <- This means a new feature.
+- <- This means a bug-fix.
+* <- This means an update of an existing feature.
+
+HEBORIS U.E. MINI V20 BETA8 (08/04/28)
++ Added "GARBAGE COUNTERING" option to VS-STANDARD mode and NET-STANDARD mode.
+  You can turn off garbage canceling by changing this option.
++ Added total lines display and total garbage display to VS-STANDARD mode and NET-STANDARD mode.
++ Added "CARRY OVER" option to MARATHON-NORMAL mode and MARATHON-ONI mode.
+  When turned on, the level points carries from level to level.
+  You can turn on this option to progress the game faster, but it is more difficult to get high score.
++ Added "NEXT COUNT RESET" option to TOMOYO-FLASH mode. The sequence of Tetrominos will revert when you clear a stage.
+* Font color of garbage warning message in VS-STANDARD mode and NET-STANDARD mode is changed.
+- Netplay is more stable. (Maybe)
+
+HEBORIS U.E. MINI V20 BETA7 (08/04/20)
++ You can turn off hard drop by change "LOCK BY UP KEY" option to "NO HARD DROP".
++ You can turn off soft drop by change "LOCK BY DOWN KEY" option to "NO SOFT DROP".
++ Added "HOLE CHANGE CHANCE" option to NET-STANDARD mode. (Thanks again Mr.zaphod77)
++ Added max clients option to heboserver. (The second command line parameter)
++ Added a system tray version of heboserver. The filename is "heboserver_tray.exe". The command line parameter is same as the original CUI version.
+- Fixed a BGM related bug of Retry Key.
+- Fixed a bug that the game does not pause when the game window has deactivated after you play netplay mode.
+
+HEBORIS U.E. MINI V20 BETA6 (08/04/13)
++ Added "Retry Key". You can set it in INPUT SETTING screen. It will restart the current game mode when pressed.
++ Added "7+1 PIECE BAG" option to NEXT PATTERN setting. (All seven pieces + a random piece)
++ Added "network.ini", a new setting file. It contains all netplay-related settings moved from heboris.ini.
+* Updated heboplugin.exe to version 0.06.
+  Opens heboris's directory by default at the "open a file" dialog.
+  Checks a plugin that already exists when adding a plugin.
+- Fixed a netplay mode bug that sometimes the sequence of pieces are same. (Thanks Mr.zaphod77)
+- Fixed a netplay mode bug caused by a broken packet.
+
+HEBORIS U.E. MINI V20 BETA5[FIX] (08/04/13)
+- Oops, I forgot to bundle the updated rule plugins! This will fix the not working "FORCE SPAWN Y TYPE" option.
+
+HEBORIS U.E. MINI V20 BETA5 (08/04/12)
++ Added "Repeat Delay" function to all three rules. (Thanks Mr.zaphod77)
++ Added "FORCE INIT LR MOVE", "FORCE REPEAT DELAY", "FORCE MAX DAS", "FORCE SPAWN Y TYPE", "FORCE HOLD", and preset function to all three netplay modes.
++ Added "PUSH AGAIN TO LOCK" option to "LOCK BY DOWN KEY" in rule settings screen.
+  This will mimic the down key behavior in TDS, TNC, and Lockjaw.
++ Added an winning counter and a round counter.
+- There was a bug when you exit the netplay mode menu without playing it. Corrected in this version.
+* Nicknames now have small shadows.
+* Removed default server list from heboris.ini file by Mr.DeHackEd's request.
+
+HEBORIS U.E. MINI V20 BETA4 (08/04/11)
++ Added "Nickname" function. You can change your nickname in heboris.ini file.
+- Opponent's playfield is now drawn correctly when he/she clears a line.
+- Opponent's garbage counter is now shown correctly.
+- Fixed minor bug of Force ARE option in NET-STANDARD mode.
+
+HEBORIS U.E. MINI V20 BETA3 (08/04/10)
+* Updated server program to version 2.
++ Now you can see how many people who are choosing the same mode there are. (If the server version is 2 or newer version)
+  (SAME MODE PLAYERS:[People who are in menu screen]/[Host players who are waiting for a guest]/[Now Playing])
++ Added Mr.mufunyo's server to heboris.ini file. (Thanks Mr.mufunyo)
+  Please note that his server is not always available.
+
+HEBORIS U.E. MINI V20 BETA2 (08/04/10)
++ Added English version of server program. (others/heboserver/heboserver_en.exe)
+  The core of server has not changed, so it will appear as version 1 regardless of language.
++ Added "FORCE ARE" function to all netplay plugins. (Thanks Mr.zaphod77)
++ Added Mr.DeHackEd's server to heboris.ini file. (Thanks Mr.DeHackEd)
+- The win/lose judgment of NET-ULTRA mode has corrected. (Not fully tested through)
+
+HEBORIS U.E. MINI V20 BETA (08/04/09)
++ Added a sort of netplay support.

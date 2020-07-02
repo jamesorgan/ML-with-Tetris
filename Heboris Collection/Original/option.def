@@ -1,0 +1,25 @@
+/*
+    * Don't Edit!! *  Created by Heboris2000 Setting Utility V1.60
+    3
+    8
+    1
+    1
+    1
+    1
+    1
+    1
+    1
+    1
+[end]
+*/
+
+int		screenMode = 2;
+int		systemmem =0;
+int		nextblock =7;
+int		blockkind =0;
+int		smooth =0;
+int		nanameallow =0;
+int		sonicdrop =0;
+int		blockflash =0;
+int		fastlrmove =0;
+int		background =0;

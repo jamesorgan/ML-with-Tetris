@@ -1,0 +1,533 @@
+CONFIG画面の説明
+さらに細かい設定はheboris.iniを編集することでできます。
+設定項目の値は左キーで減少、右キーで増加させることができます。
+Cボタンを押しながら左か右を押すと早く値を増減させることが可能です。
+
+■ メインメニュー
+[SAVE & EXIT]　　：設定を保存してタイトルに戻ります。
+　　　　　　　　　これを選ばずにBボタンを押すと変更した設定は元に戻ります。
+
+[GAME SETTING]　 ：ゲーム内容に関する設定を変更します。
+
+[DISPLAY SETTING]：画面表示に関する設定を変更します。
+
+[SOUND SETTING]　：音に関する設定を変更します。
+
+[INPUT SETTING]　：キー入力に関する設定を変更します。
+
+[CUSTOM RULE]　　：「CUSTOM」ルールの設定を変更します。
+
+[FONT COLOR]　　 ：各ルールのフォントの色を変更します。
+
+[ITEM SWITCH]　　：あるアイテムが出てくるか出てこないかを変更します。
+
+[EDIT FAVORITES] ：PRACTICEモードなどの速度設定を変更します。
+
+[RESET SETTINGS TO C7 STYLE]：これを選択してAボタンを押すといくつかの設定をC7系に近いものに変更します。
+　　　　　　　　　　　　　　　ただし自動的にセーブはしません。
+
+[SCREEN SETTING] ：画面サイズなどの設定を変更します。
+
+■ GAME SETTING
+MAX PLAYER　　　　 ：SINGLEに設定するとフィールドが真ん中に表示され、2人同時プレイが出来なくなります。
+　　　　　　　　　　 DUALにするとフィールドが左右に2つ表示され、2人同時プレイが可能になります。
+　　　　　　　　　　 VERSUSモードに入ると自動的にDUALになります。
+
+WORLD REVERSE　　　：ONにするとWORLDルールで回転方向を逆転させます。
+　　　　　　　　　　 ゲームセンターでも遊ぶ人は「ON」がおすすめです。
+
+IRS WALLKICK　　　 ：ONにするとIRS使用時、I型ブロックが１マス分の上方向の壁蹴りをするようになります。
+
+DOWN TYPE　　　　　：下か上を押しっぱなしにした時に、２ブロック目以降も落ちるかどうかの設定です。
+　　　　　　　　　　 20Gに突入した時、特に重要となります。
+　　　　　　　　　　　NO LIMIT … 常に押しっぱなし可能
+　　　　　　　　　　　LIMIT　　… 常に押しっぱなし不可
+　　　　　　　　　　　AUTO　　 … 20Gのときは押しっぱなし不可、それ以外なら可能
+
+NEXT PATTERN　　　 ：ブロックの出現パターンを選びます。
+　　　　　　　　　　　RANDOM　　　　　… 完全にランダム
+　　　　　　　　　　　HEBO○　　　　　… ヘボリス式（○には1～7までの数字）
+　　　　　　　　　　　MEMORY4 (4 TRY) … 某ゲーム式（偏り多め）
+　　　　　　　　　　　MEMORY4 (6 TRY) … 某ゲーム式（偏り少なめ）
+　　　　　　　　　　　7 PIECE BAG　　 … 某ガイドライン式（HEBO7と似てるけど同じブロックが2連続で来ることがある）
+　　　　　　　　　　　TOMOYO　　　　　… TOMOYOモードの出現順を全モードで使用します。255個でループします。
+　　　　　　　　　　　DENGEN　　　　　… 固定されたパターンでブロックが出現します。1000個でループします。
+　　　　　　　　　　　DENGEN2　　　　 … 上のDENGENとは違うパターンでブロックが出現します。1000個でループします。
+
+8WAY INPUT　　　　 ：「ナナメ入力」です。OFFにすると斜めに入力してもブロックが動きません。
+
+SONIC DROP　　　　 ：「高速落下」です。OFFにすると即落下が使用できなくなります。
+
+INIT LR MOVE　　　 ：「横方向先行入力」です。
+　　　　　　　　　　 ブロック出現前に方向キーを横に押し続けると、ブロックが横にずれた状態で出現する現象の有無を選びます。
+　　　　　　　　　　 ゲームセンターでも遊ぶ人は「OFF」がおすすめです。（「ON」にすると変な癖がつきます）
+　　　　　　　　　　　ON　　　　　　　… あり
+　　　　　　　　　　　OFF　　　　　　 … なし
+　　　　　　　　　　　SUPER　　　　　 … あり（ONのときよりも少しだけ強力）
+　　　　　　　　　　　HYPER　　　　　 … あり（ブロックが出現するまでNEXTブロックを横移動し放題）
+
+LVUP BONUS　　　　 ： ONにすると3ライン消しの時4Lv、4ライン消しの時6Lv上昇するようになります。
+　　　　　　　　　　 OFFにすると3ライン消しの時3Lv、4ライン消しの時4Lv上昇します。
+　　　　　　　　　　 ACEモードなどでは関係ありません。
+
+MAX FPS　　　　　　：最大FPSを設定できます。最初は60FPSになっています。
+　　　　　　　　　　 小さくすると遅く、大きくすると早くなります。
+　　　　　　　　　　 早すぎるとちゃんとした操作ができないかも…
+
+SPAWN Y TYPE　　　 ：「UNDER THE FRAME」 … ブロックが枠内で出現します。
+　　　　　　　　　　 「ABOVE THE FRAME」 … ブロックが枠の上から出現し、少し死ににくくなります。
+　　　　　　　　　　　　　　　　　　　　　　ただし、完全に枠からはみ出した場所にブロックを置くと死にます。
+
+T-SPIN　　　　　　 ：Ｔ字型のブロックを接地させ、さらに左右に動かさないで「あること」をすると
+　　　　　　　　　　 「T-SPIN」と画面下に表示されます。
+　　　　　　　　　　 ここではその「あること」を選びます。
+　　　　　　　　　　　OFF　　　　　　　 … T-SPINを発生させません。
+　　　　　　　　　　　LINE CLEAR　　　　… 1ライン以上消去すると発生します。回転入れは必要ありません。
+　　　　　　　　　　　IMMOBILE　　　　　… T字ブロックが左にも右にも上にも動けない所にあるときに発生します。
+　　　　　　　　　　　　　　　　　　　　　 これを発生させるには「回転入れ」のテクニックが必要になります。
+　　　　　　　　　　　3-CORNER　　　　　… T字ブロックの四隅に3つ以上の壁または他のブロックがあれば発生します。
+　　　　　　　　　　　　　　　　　　　　　 IMMOBILEよりも簡単に発生します。例えばこんなこと↓をしても発生します。
+　　　　　　　　　　　　　　　　　　　　　 ｜　■　　　　　｜■
+　　　　　　　　　　　　　　　　　　　　　 ｜■■■　　→　｜■■
+　　　　　　　　　　　　　　　　　　　　　 ｜　□□□　　　｜■□□□
+　　　　　　　　　　　　　　　　　　　　　 └――――　　　└――――
+　　　　　　　　　　　3-CORNER NO KICK　… 3-CORNERとほぼ同じですが、壁蹴りするとT-SPINになりません。
+　　　　　　　　　　　　　　　　　　　　　 したがって、上の図と同じことをしてもT-SPIN扱いにならなくなります。
+
+WORLD LOCKDOWN　　 ：「GUIDELINE」以外のSRS系ルールでは、しばらく回転していると勝手に固定されてしまいます。
+　　　　　　　　　　 回転可能な回数が「多いか」「少ないか」をここで設定できます。
+　　　　　　　　　　　OLD TYPE … 多い
+　　　　　　　　　　　NEW TYPE … 少ない
+
+WORLD SOFTLOCK　　 ：下を押してブロックを普通に落下させても即固定しないルールで
+　　　　　　　　　　 下入れでブロックを接地させ、下キーを離して、もう一度下キーを押すと何が起こるかを設定します。
+　　　　　　　　　　　NORMAL　　　 … 押しつづけると固定されるまでの時間が微妙に短縮されます。
+　　　　　　　　　　　INSTANT LOCK … ブロックが即座に固定されます。
+　　　　　　　　　　　FASTER LOCK　… 固定されるまでの時間が大きく短縮されます。
+　　　　　　　　　　　NONE　　　　 … 押しつづけても何も起こりません。
+
+180 ROTATION　　　 ：180度回転ができるようになります。とんでもない回転が可能です。
+　　　　　　　　　　　OFF　　　　　　　 … 全てのルールで無効
+　　　　　　　　　　　ON　　　　　　　　… 全てのルールで有効
+　　　　　　　　　　　ONLY SP RULE　　　… SPECIAL系ルール（＋同名の設定をONにしたCUSTOMルール）のみ有効
+
+ENABLE MIN SP　　　：OFFにするとTOMOYOモードの落下速度が早いステージで落下速度が遅くなります。
+　　　　　　　　　　 DEVIL500（BOOST FIRE）ギミックも作動しなくなります。
+　　　　　　　　　　 なお、今のところ標準ステージに落下速度が早いステージはありません。
+
+ENABLE HOLD　　　　：OFFにするとHOLDが使えなくなります。
+
+T-SPIN BONUS　　　 ：T-SPINを成功させたときにスコアボーナスが入るかどうか選びます。
+
+B-T-B BONUS　　　　：BACK TO BACKを成功させたときにスコアボーナスが入るかどうか選びます。
+　　　　　　　　　　 （BACK TO BACKは連続でヘボリスまたはT-SPINを決めることです）
+
+IRS TYPE　　　　　 ：先行回転の種類を3タイプから選びます。
+　　　　　　　　　　　NORMAL　　　 … 今までのヘボリスと同じです。
+　　　　　　　　　　　　　　　　　　　回転ボタンを押しっぱなしにすると回った状態でブロックが出現します。
+　　　　　　　　　　　NEW (A TYPE) … ブロックが出現するまで何度でもネクストブロックを回転させることができます。
+　　　　　　　　　　　NEW (B TYPE) … A TYPEと同じですが、IRSとHOLDを同時使用してもブロックの向きがリセットされません。
+　　　　　　　　　　　NEW (C TYPE) … B TYPEと同じですが、ブロックが固定されて光った瞬間でも先行回転ができます。
+
+SKIP LOCKFLASH　　 ：ブロックが固定された瞬間、ブロックが光る演出があります。
+　　　　　　　　　　 この設定をONにするとその演出を短縮します。
+　　　　　　　　　　 OFF　 … 短縮しない
+　　　　　　　　　　 ON　　… 短縮する
+　　　　　　　　　　 SUPER … さらに短縮する
+
+DRS FLOOR KICK　　 ：ONにするとSPECIAL-DルールでT型ブロックとI型ブロックが特殊な回転をするようになります。
+
+SHOW END MENU　　　：ONにするとゲームオーバー後にリプレイ保存画面を表示します。
+
+ITEM HOLD　　　　　：アイテムブロックをホールドしてもアイテムが残るかどうかを設定します。
+　　　　　　　　　　 INITAL OFF/NORMAL OFF … 消える（普通のブロックになる）
+　　　　　　　　　　 INITAL  ON/NORMAL  ON … 残る
+　　　　　　　　　　 INITAL OFF/NORMAL  ON … 先行ホールドを使うと消える、先行ホールド以外なら残る
+　　　　　　　　　　 INITAL  ON/NORMAL OFF … 先行ホールドを使うと残る、先行ホールド以外なら消える
+
+FREE FALL RISE　　 ：アイテム「FREE FALL」でラインが消えた時に
+　　　　　　　　　　 消えたライン数だけせり上がりを発生させるかどうかを設定します。
+　　　　　　　　　　 せり上がり時には穴の位置がランダムですが、縦一列に集まっています。
+
+VS GOAL LEVEL　　　：VERSUSモードのゴールレベル（またはライン数）を設定します。
+　　　　　　　　　　 相手より先にここで設定したゴールに到達すると勝利となります。
+　　　　　　　　　　 NONEにするとゴール到達による勝利がなくなります。
+
+VS GOAL TYPE　　　 ：VERSUSモードのゴールの種類を設定します。
+　　　　　　　　　　 LEVEL　　… レベル
+　　　　　　　　　　 LINE　　 … ライン
+　　　　　　　　　　 MARATHON … MARATHONモード方式のレベル
+
+VS TIME LIMIT　　　：VERSUSモードの制限時間を設定します。
+　　　　　　　　　　 時間切れになるとレベルが高いほうが勝利となります。
+　　　　　　　　　　 NONEにすると時間が無制限になります。
+
+VS ITEM　　　　　　：ONにするとVERSUSモードにアイテムが出現するようになります。
+
+VS RISE　　　　　　：ONにするとVERSUSモードで2ライン以上同時に消すと相手のフィールドをせり上げることができます。
+
+ITEM GAUGE UP　　　：アイテムゲージの上がりかたを設定します。
+　　　　　　　　　　 PUT BLOCK　　　　　　… ブロックを置くたびに1つ上がります。
+　　　　　　　　　　 PUT BLOCK/ERASE LINE … ラインを消しても上がります。
+　　　　　　　　　　 ERASE LINE　　　　　 … ラインを消したときだけ上がります。
+
+ITEM INTERVAL　　　：アイテムの出現間隔を設定します。この回数だけブロックを置くとアイテムが出現します。
+
+SHOW RISE LINE　　 ：ONにするとせり上がりが発生するときに、フィールド下に何ラインせり上がるか表示します。
+
+LACK BLOCK　　　　 ：GRAYOUTにすると、ライン消しで残ったブロックの破片を灰色で表示します。
+
+FAV DEFAULT　　　　：PRACTICE、SIMPLE、VERSUSのデフォルト設定を選択します。
+
+NEXT SKIP　　　　　：ツモスキップ機能（READY→GOまでにDボタンを押すとNEXTを先送り）の有無を選択します。
+　　　　　　　　　　 TOMOYO ONLY　　 … TOMOYOモードのFLASHコース以外
+　　　　　　　　　　 TOMOYO & FLASH　… TOMOYOモードの全コース
+　　　　　　　　　　 ON　　　　　　　… 全モードON
+　　　　　　　　　　 OFF　　　　　　 … 全モードOFF
+
+P LEVEL TYPE　　　 ：PRACTICEモードのレベルアップ方式を選択します。
+　　　　　　　　　　 NORMAL　 … MASTERモードと同じ方式
+　　　　　　　　　　 10 LINES … ACEモードと同じ方式
+
+P TIME LIMIT　　　 ：PRACTICEモードの制限時間を設定します。NO LIMITにすると無制限になります。
+
+P GOAL　　　　　　 ：PRACTICEモードのゴールを設定します。このレベル（またはライン）に到達するとエンディングになります。
+
+P STAFF ROLL　　　 ：PRACTICEモードでゴールに到達したときにスタッフロールになるかどうかを選択します。
+
+CPU PLAYER 1P　　　：1P側の操作を人間がするか、コンピュータがするかを選択します。
+
+CPU PLAYER 1P　　　：2P側の操作を人間がするか、コンピュータがするかを選択します。
+
+CPU LEVEL  1P　　　：1P側をコンピュータが操作する場合、コンピュータの操作の速さを選択します。
+　　　　　　　　　　 数字が大きいほど早く動きます。
+
+CPU LEVEL  2P　　　：2P側をコンピュータが操作する場合、コンピュータの操作の速さを選択します。
+　　　　　　　　　　 数字が大きいほど早く動きます。
+
+ENABLE COMBO　　　 ：コンボボーナス（連続でライン消し）を有効にするかどうかを選択します。
+
+ENABLE IRS　　　　 ：先行回転入力を有効にするかどうかを選択します。
+
+AUTO SAVE　　　　　：ONにするとプレイ終了時（リプレイ保存画面が表示されたとき）に
+　　　　　　　　　　 プレイ内容を自動的にLASTPLAY.SAVに保存します。
+
+■ DISPLAY SETTING
+FIELD TR　　　　：フィールドの背景の半透明度を設定します。
+　　　　　　　　　値が大きい（かなり透明）ほど明るくなり、値が小さい（かなり不透明）ほど暗くなります。
+
+BREAK EFFECT　　：ラインを消したときのアニメーションの種類を選びます。
+　　　　　　　　　NO EFFECT　　　　　　　… アニメーションを表示しません
+　　　　　　　　　POP OUT　　　　　　　　… ブロックが弾け飛びます
+　　　　　　　　　SHATTER　　　　　　　　… ブロックが粉々になって飛び散ります
+　　　　　　　　　　　　　　　　　　　　　　（下のBREAK GRAPHICSでグラフィックを選べます）
+　　　　　　　　　SHATTER (OLD)　　　　　… SHATTERの簡素なバージョン
+　　　　　　　　　OLD STYLE-HANDHELD　　 … ブロックが点滅して消えます
+　　　　　　　　　OLD STYLE-ARCADE　　　 … ブロックが暗くなっていき消えます
+
+BREAK GRAPHICS　：BREAK EFFECTでSHATTERを選んでいるとき、飛び散りグラフィックの種類を選びます。
+　　　　　　　　　LOW BRIGHT　… 暗いブロックが四方八方に飛び散ります
+　　　　　　　　　HIGH BRIGHT … 明るいブロックが下方向に飛び散ります
+
+NEXT DISPLAY　　：NEXTブロックの表示数を選びます。
+
+RULE NAME TYPE　：ルール名の表示を3パターンから選びます。
+　　　　　　　　　0 … ルール名を旧称で表示します
+　　　　　　　　　1 … ルール名を普通に表示します
+　　　　　　　　　2 … ルール名をなるべく固有名詞のないバージョンで表示します（デフォルト）
+
+SHOW FPS　　　　：現在FPS／最大FPSを画面下に表示するかどうかの設定です。
+　　　　　　　　　OFF　　 … なし
+　　　　　　　　　ON　　　… あり
+　　　　　　　　　CAPTION … タイトルバーに表示
+
+SHOW CONTROL　　：画面右に操作状況を表示するかどうかの設定です。
+　　　　　　　　　REPLAY ONLY … リプレイのときだけ表示します
+　　　　　　　　　ON　　　　　… 常に表示します
+　　　　　　　　　OFF　　　　 … 表示しません
+
+BACKGROUND　　　：背景を表示するかどうかの設定です。
+　　　　　　　　　動作が重い場合はOFFにしてみてください。
+
+GHOST PIECE　　 ：ブロックの落下予測地点を表示するかどうかの設定です。
+　　　　　　　　　LV100 … レベルが0～99のときだけ表示します（ACEモードなどでは常に表示されます）
+　　　　　　　　　ON　　… 常に表示します
+　　　　　　　　　OFF　 … 表示しません
+
+TOP FRAME　　　 ：NEXTブロックが表示される場所の枠グラフィックを2種類から選べます。
+
+SPIN FIELD　　　：SOLO MODEで参加待ちプレイヤーのフィールドをクルクル回します。
+
+MAX EFFECT　　　：画面に表示されるエフェクトの最大数を設定します。
+　　　　　　　　　エフェクトには「ライン消去アニメ」「花火」「全消し表示」などが含まれます。
+　　　　　　　　　動作が重い場合は数字を減らしてみてください。
+
+SHOW GPOINT　　 ：ONにするとMASTERと20Gで段位ポイントを表示します。
+　　　　　　　　　段位ポイントはスコアの下に表示されます。
+
+BLOCK FRAME　　 ：「ブロックの枠線」です。操作中のブロックの周りに枠を表示するかどうかの設定です。
+　　　　　　　　　BLINK … 点滅した枠を表示します
+　　　　　　　　　ON　　… 点滅しない枠を表示します
+　　　　　　　　　OFF　 … 枠を表示しません
+
+SHOW GRID　　　 ：ONにするとフィールドの背景にマス目を表示します。
+
+LANGUAGE　　　　：モード説明文やMISSIONモードの指令文の表示言語を選択します。
+　　　　　　　　　JAPANESE … 日本語
+　　　　　　　　　ENGLISH　… 英語
+
+BACK TO BACK　　：ONにするとBACK TO BACKしたときに、「BACK TO BACK」の文字がフィールド下に表示されます。
+　　　　　　　　　ON (WITH CHAIN DISP)にすると何連続でBACK TO BACKをしているかも表示されます。
+
+SCORE DISPLAY　 ：HIDEにするとスコアが見えなくなります。
+
+GRADE DISPLAY　 ：HIDEにすると段位が見えなくなります。
+
+BG FADE　　　　 ：ONにすると背景が切り替わるときにフェードアウト／フェードイン演出が入ります。
+
+TOMOYO CLEAR　　：TOMOYOモードでステージクリアしたときに、全てのブロックが消える演出が入るかどうかを決めます。
+　　　　　　　　　EFFECT OFF … なし
+　　　　　　　　　EFFECT ON　… あり
+
+BEGINNER BREAK　：「POP OUT」にすると、BEGINNERモードではBREAK EFFECTの設定を無視して強制的にPOP OUTの演出を使用します。
+　　　　　　　　　「USE NORMAL SETTING」にするとBREAK EFFECTの設定通りになります。
+
+NAVIGATION　　　：ブロックを積むべき場所を誘導するナビゲーションシステムを使うかどうか決めます。
+　　　　　　　　　OFF　　　　　 … ナビゲーションなし
+　　　　　　　　　BEGINNER ONLY … BEGINNERモードのみナビゲーションあり
+　　　　　　　　　ON　　　　　　… すべてのモードでナビゲーションあり
+
+NAVI END LEVEL　：ナビゲーションが終わるレベルを設定します。
+
+NAVI DISP TIME　：ナビゲーションブロックの表示時間を設定します。
+
+PAUSE FIELD　　 ：ポーズ中でもフィールドが見えるかどうかを選択します。
+　　　　　　　　　HIDE … 見えない
+　　　　　　　　　SHOW … 見える
+
+PRACTICE BG　　 ：PRACTICEモードのデフォルトの背景を選択します。
+
+DISP LAST LINE　：ONにするとラインを消したときに何ライン消えたかをフィールド下に表示します。
+
+HOLD FRAME　　　：一度ホールドして、その後ホールドから出したブロックの周りに付く黄色い枠線の太さを変更します。
+　　　　　　　　　BOLD … 太い
+　　　　　　　　　THIN … 細い
+　　　　　　　　　OFF　… 枠線を表示しない
+
+SHOW SEC-TIME　 ：レベルごとの到達タイムやセクションタイムの表示の有無を選択します。
+　　　　　　　　　OFF　　　　　　　 … なし
+　　　　　　　　　ACHIEVE TIME ONLY … 到達タイムのみ表示
+　　　　　　　　　SECTION TIME ONLY … セクションタイムのみ表示
+　　　　　　　　　ON　　　　　　　　… 両方とも表示
+
+TIMER FONT　　　：1にするとタイム表示のフォントが変わります。
+
+BLOCK SHADOW　　：ONにするとブロックの右側（VSモードの2Pでは左側）にブロックの影を表示します。
+　　　　　　　　　フィールド枠も立体的な物に変化します。
+
+AFTERIMAGE　　　：ブロックの残像を表示する設定です。
+　　　　　　　　　OFF　　　　　　… なし
+　　　　　　　　　HARD DROP ONLY … ハードドロップ使用時のみ
+　　　　　　　　　ON　　　　　　 … あり
+
+ACE FRAME　　　 ：ONにするとACEモードなどでフィールド枠に飾りを表示します。
+
+DISPLAY COMBO　 ：コンボ数（連続ライン消し数）を画面下に表示するかどうかの設定です。
+　　　　　　　　　OFF　　：なし
+　　　　　　　　　NORMAL ：あり
+　　　　　　　　　2LINES ：あり（2ライン以上コンボのみ）
+
+IGNORE BACK13-　：ONにすると背景画像のback13.png、back14.png、back15.pngを読み込まなくします。
+　　　　　　　　　C7系用の背景画像パックを使用するときなどにONにしてください。
+
+DISP WAITS　　　：ONにすると画面右下に現在の落下速度などを表示します。
+
+DISP LINE INFO　：ONにするとデフォルトで画面左にライン消し回数情報を表示します。
+　　　　　　　　　MAX PLAYERがDUALの場合や、SHOW SEC-TIMEがOFF以外のときは効果がありません。
+　　　　　　　　　プレイ中にポーズをかけて1P側のステージスキップキーを押すことで表示非表示の切り替えが可能です。
+
+REFRESH TIMING　：画面表示を更新し、効果音を再生するタイミングを変更できます。
+　　　　　　　　　AFTER GAME CYCLE　… 各フレームの処理が終わったあとに更新します。
+　　　　　　　　　BEFORE GAME CYCLE … 各フレームの処理が始まる前に更新します。
+
+EFFECT SPEED　　：ブロックの消去エフェクトの表示速度を「AUTO」「×1～5」で選べます。
+　　　　　　　　　AUTOにすると落下スピードにあわせて自動的に1～3倍速で調節します。
+　　　　　　　　　×1～5にすると表示速度が固定になります。
+　　　　　　　　　表示速度が速いほど表示される時間は短くなり、処理も軽くなります。
+
+HIDDEN-B TYPE　 ：HIDDEN-B（消えロール）で、ブロックを置いた直後に枠線が表示されるかどうかを切り替えます。
+　　　　　　　　　NORMAL　… あり
+　　　　　　　　　SPECIAL … なし
+
+■ SOUND SETTING
+[SOUND TEST]　 ：効果音（BGMが「WAVE」または「MP3」のときは音楽も）を自由に聞くことが出来ます。
+
+[MUSIC TEST]　 ：音楽を自由に聞くことが出来ます。（BGMが「WAVE」または「MP3」以外でもＯＫ）
+
+BGM　　　　　　：音楽の種類を選びます。曲リストはaddons.txtを参照してください。
+　　　　　　　　OFF　　　　　　 … 音楽なし
+　　　　　　　　MIDI　　　　　　… bgm\bgm.midを再生（BGMは一度も切り替わりません）
+　　　　　　　　WAVE　　　　　　… bgm\bgmXX.wavを再生
+　　　　　　　　MP3　　　　　　 … bgm\bgmXX.mp3を再生
+　　　　　　　　MIDI (MULTI)　　… bgm\bgmXX.midを再生※
+　　　　　　　　WAVE (ONDEMAND) … bgm\bgmXX.wavを再生※
+　　　　　　　　MP3 (ONDEMAND)　… bgm\bgmXX.mp3を再生※
+　　　　　　　　※これらの設定では、BGMは起動時に全て読み込まれるのではなく
+　　　　　　　　　必要になったときに「その場」で読み込まれます。
+　　　　　　　　　そのためプレイ中にゲームの動きが少し止まります。また、ハードディスクへのアクセスが発生します。
+
+SE　　　　　　 ：効果音の有無を選びます。
+
+BGM VOLUME　　 ：BGMのボリュームを設定します。BGMが「WAVE」または「MP3」のときだけ有効です。
+　　　　　　　　 値が小さいほどボリュームは小さくなります。
+
+SE VOLUME　　　：効果音のボリュームを設定します。
+　　　　　　　　 値が小さいほどボリュームは小さくなります。
+
+ROTATE SOUND　 ：ONにするとブロックが回転するときの音を再生するようになります。
+
+MOVE SOUND　　 ：ONにするとブロックが移動するときの音を再生するようになります。
+
+SRS LANDING SE ：ONにすると、SRS系ルールで接地中に回転／移動をしたときに接地音が鳴るようになります。
+
+ENDING LOOP　　：ONにするとエンディング曲がループするようになります。
+
+B ENDING LOOP　：ONにするとBEGINNERモードのエンディング曲がループするようになります。
+
+HOLD SOUND　　 ：seフォルダ以下のhold.wavをどんな時に鳴らすかを設定します。
+　　　　　　　　OFF　　　　 … 鳴らさない
+　　　　　　　　IHS ONLY　　… IHS使用時だけ鳴らす
+　　　　　　　　NO-IHS ONLY … IHS以外のときだけ鳴らす
+　　　　　　　　ON　　　　　… 常に鳴らす
+
+BGM FADE TIME　：BGMのフェードアウトにかかる時間を変更できます。値が大きいほどフェードアウト時間が短くなります。
+　　　　　　　　 0にするとBGMをフェードアウトせずに即座に停止します。
+
+■ INPUT SETTING
+[KEYBOARD 1P]　　　　　　　：1P側のキー配置を設定します。
+
+[KEYBOARD 2P]　　　　　　　：2P側のキー配置を設定します。
+
+[FUNCTION KEY]　　　　　　 ：ファンクションキー（ポーズ、NEXT表示その他）を設定します。
+
+[JOYSTICK 1P]　　　　　　　：1P側のジョイスティックのボタン配置を設定します。
+　　　　　　　　　　　　　　 キーボードのBackspaceキーでキャンセルできます。
+
+[JOYSTICK 2P]　　　　　　　：2P側のジョイスティックのボタン配置を設定します。
+　　　　　　　　　　　　　　 キーボードのBackspaceキーでキャンセルできます。
+
+[JOYSTICK FUNCTION KEY 1P] ：ファンクションキーのジョイスティックボタン配置を設定します。（1P側のスティック用）
+
+[JOYSTICK FUNCTION KEY 2P] ：ファンクションキーのジョイスティックボタン配置を設定します。（2P側のスティック用）
+
+[INPUT TEST]　　　　　　　 ：キー入力テストができます。
+　　　　　　　　　　　　　　 キーボードのBackspaceキーで終了します。
+
+JOYSTICK BUTTONS　　　　　 ：ジョイスティックのボタン数を変えます。ボタン数には方向キーも含まれます。
+　　　　　　　　　　　　　　 よく分からない場合は16のままにしたほうがいいです。
+
+■ CUSTOM RULE
+ROTATION TYPE　　：回転法則を「ARS」「SRS」「DRS」の3種類から選びます。
+
+HARD DROP LOCK　 ：ハードドロップ（↑キー）を使ったときにブロックが固定されるかどうかを選択します。
+
+SOFT DROP LOCK　 ：ソフトドロップ（↓キー）を使ったときにブロックが固定されるかどうかを選択します。
+　　　　　　　　　 OFF　　　　　　　　… 固定なし
+　　　　　　　　　 ON　　　　　　　　 … 固定あり
+　　　　　　　　　 ONLY 1G OR FASTER　… スピードが1G以上の場合のみ固定あり
+
+SOFT DROP SPD　　：ソフトドロップ（↓キー）を使ったときのブロックが落ちる速さを選択します。
+
+ARE　　　　　　　：ブロックが固定されたあとの待ち時間の有無を選択します。
+　　　　　　　　　 OFF　　　　　　　… なし
+　　　　　　　　　 ON　　　　　　　 … あり
+　　　　　　　　　 ON (WITH CANCEL) … あり（ハードドロップをしたあとに何かボタンを押すとキャンセル可能）
+
+BLOCK COLOR　　　：ブロックの色のパターンを「CLASSIC」と「WORLD」の2つから選択します。
+
+LOCK RESET　　　 ：ブロックが接地した状態で「回転」または「左右移動」をすると
+　　　　　　　　　 固定されるまでの猶予時間が延長されるかどうかを選択します。
+
+LOCK SOUND　　　 ：自分でブロックを強制的に固定させたとき、seフォルダ以下のace_sonic_lock.wavを鳴らすかどうか選択します。
+
+USE NEW ARS　　　：「ROTATION TYPE」がARSのとき、I型とT型が特殊な回転をするかどうかを選択します。
+　　　　　　　　　 「ROTATION TYPE」がARS以外のときは関係ありません。
+
+MOVE LIMIT　　　 ：「LOCK RESET」がONのとき、何回まで移動ができるかを設定します。
+　　　　　　　　　　NO LIMITにすると制限なしになります。
+　　　　　　　　　 「LOCK RESET」がOFFのときは関係ありません。
+
+ROTATE LIMIT　　 ：「LOCK RESET」がONのとき、何回まで回転ができるかを設定します。
+　　　　　　　　　　NO LIMITにすると制限なしになります。
+　　　　　　　　　 「LOCK RESET」がOFFのときは関係ありません。
+
+BLOCK GRAPHICS　 ：ブロックの模様を0～7の8種類から選べます。（色は「BLOCK COLOR」で設定）
+
+180 ROTATION　　 ：GAME SETTINGの同名の項目で「ON (ONLY SP RULE)」を選んでいるとき
+　　　　　　　　　 180度回転を有効にするかしないかを選びます。
+
+MAX YOKOTAME　　 ：横移動に必要な横溜め時間の最大値を設定します。
+　　　　　　　　　 この値が小さいと序盤でもブロックがツルツル滑るようになります。
+　　　　　　　　　 INFINITEにすると最大値制限は無くなります。
+
+[] BACKGROUND　　：ブロックが[]になっているときにフィールドに背景を表示するかどうかを設定します。
+　　　　　　　　　 OFF　 … なし
+　　　　　　　　　 WHITE … 白
+　　　　　　　　　 BLACK … 黒
+
+■ FONT COLOR
+各ルールのフォントの色を設定できます。
+「FONT」は主に文字の色、「DIGIT」は主に20Gの時の数字の色に使われます。
+
+■ ITEM SWITCH
+アイテムが出現するモードで、ある特定のアイテムが出るか出ないかを設定できます。
+ONの場合は出現し、OFFの場合は出現しません。
+
+■ EDIT FAVORITES
+SETTING NUMBER　 ：どの番号の設定を変更するかを選びます。（1～20まで）
+
+[NAME]　　　　　 ：これにカーソルを合わせた状態でAボタンを押すと名前変更ができます。
+
+SYUTUGEN　　　　 ：ブロックが出現するまでの待ち時間
+　　　　　　　　　（NO CHANGEにすると読み込んでも変更されません）
+
+SYOUKYO　　　　　：ライン消去中の待ち時間
+　　　　　　　　　（NO CHANGEにすると読み込んでも変更されません）
+
+SETTYAKU　　　　 ：ブロックが接地してから固定されるまでの時間
+　　　　　　　　　（NO CHANGEにすると読み込んでも変更されません）
+
+YOKOTAME　　　　 ：横移動に必要な溜め時間
+　　　　　　　　　（NO CHANGEにすると読み込んでも変更されません）
+
+SPEED　　　　　　：落下速度（0で自然落下なし、60で1G、120で2G、180で3G…1200で20G）
+　　　　　　　　　（NO CHANGEにすると読み込んでも変更されません）
+
+FPS　　　　　　　：最大FPS
+　　　　　　　　　（NO CHANGEにすると読み込んでも変更されません）
+
+BGM　　　　　　　：再生するBGM
+　　　　　　　　　（NO CHANGEにすると読み込んでも変更されません）
+
+[SHORTCUT KEY]　 ：これにカーソルを合わせた状態でAボタンを押すとショートカットキーの設定ができます。
+　　　　　　　　　 ここで設定したキーをPRACTICE／SIMPLE／VERSUSのセレクト画面で押すと、すぐにこの設定を読み込めます。
+
+「EDIT FAVORITES」の設定はFAVORITES.SAVに保存されます。
+
+■ SCREEN SETTING
+SIZE　　　　　　 ：画面サイズを設定します。
+　　　　　　　　　 FULLSCREEN 320X240 … フルスクリーンモード 320x240
+　　　　　　　　　 WINDOW 320X240　　 … ウィンドウモード 320x240
+　　　　　　　　　 WINDOW 640X480　　 … ウィンドウモード 640x480
+
+MEMORY　　　　　 ：グラフィックデータをどのメモリに読み込むかを設定します。
+　　　　　　　　　 VIDEO MEMORY (FAST)　 … ビデオメモリ（推奨）
+　　　　　　　　　 SYSTEM MEMORY (SLOW)　… システムメモリ
+
+COLOR　　　　　　：画面の色数を設定します。フルスクリーンモードでのみ効果があります。
+　　　　　　　　　 ウィンドウモードの場合はWindows側の設定が使われます。
+　　　　　　　　　 16 BIT … High Color（推奨）
+　　　　　　　　　 24 BIT … True Color
+　　　　　　　　　 32 BIT … Full Color
+
+「SCREEN SETTING」の設定はSCREEN.SAVに保存されます。設定内容は次回起動時から有効になります。

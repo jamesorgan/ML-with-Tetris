@@ -1,0 +1,119 @@
+■背景
+Heborisのフォルダの中にbackの名前のフォルダを作り、
+その中に対応するpngファイルを入れると、デフォルトの背景の代わりにその背景が使用されます。
+サイズは320x240です。
+使用個所はモードによって異なります。普通はback01.pngから始まり、back02.png、back03.png…と番号が増えていきます。
+
+ファイル名
+------------------------------------------------------------
+back01.png
+back02.png
+back03.png
+back04.png
+back05.png
+back06.png
+back07.png
+back08.png
+back09.png
+back10.png
+back11.png
+back12.png
+back13.png
+back14.png
+back15.png
+back16.png
+back17.png
+back18.png
+back19.png
+back20.png
+back_vs.png
+
+
+■サウンド
+Heborisのフォルダの中にbgm/voice/se/blockseのそれぞれのフォルダを作り、
+その中に対応するwavファイルを入れると、デフォルトの音の代わりにその音が鳴ります。
+
+・bgmフォルダ
+ファイル名
+------------------------------------------------------------
+bgm01.wav
+bgm02.wav
+bgm03.wav
+bgm04.wav
+bgm05.wav
+bgm06.wav
+ending.wav
+ending_b.wav
+tomoyo.wav
+tomoyo_ex.wav
+vsmode.wav
+title.wav
+select.wav
+nameentry.wav
+tomoyo_eh.wav
+ace.wav
+mission_ex01.wav
+mission_ex02.wav
+mission_ex03.wav
+tomoyo_eh_final.wav
+mission_trial.wav
+fever.wav
+
+※BGMの使用個所はモードによって異なります。
+※設定でBGMを「MP3 (NO ID3 TAG)」にしている場合、拡張子の.wavが.mp3になります。
+　MP3ファイルを使用する場合、ID3タグが埋め込まれたmp3は使用できません。
+　設定でBGMを「MIDI」にしている場合は、拡張子が.midになります。
+※読み込むBGMのファイル名はheboris.iniを編集することで変更できます。
+
+・voiceフォルダ
+ファイル名　　：　使用個所
+------------------------------------------------------------
+ready.wav 　　：　ゲーム開始時
+go.wav　  　　：　ゲーム開始時
+
+・seフォルダ
+ファイル名　　　　：　使用個所
+------------------------------------------------------------
+applause.wav      ：　4ライン消し時の歓声
+self_lock.wav     ：　ルール設定で「SELF LOCK SOUND」をONにしている時に自分でブロックを固定させたとき（kon.wavが同時に鳴る）
+cheer.wav         ：　4ライン消しからのコンボ
+erase1～4.wav     ：　ライン消去（数字は消したライン数）
+gameover.wav      ：　ゲームオーバー
+gon.wav           ：　ブロック消去後の落下音
+hanabi.wav        ：　花火発生
+hold.wav          ：　ホールド音
+hurryup.wav       ：　タイムカウントダウン（残10秒から）
+kachi.wav         ：　ブロック固定音
+kettei.wav        ：　決定音
+kon.wav           ：　ブロック段差落下
+levelup.wav       ：　レベルアップ
+lvstop.wav        ：　～99Lvのとき（レベルストップ）・アイテム出現
+medal.wav         ：　メダル獲得
+move.wav          ：　ブロック及びメニューでのカーソル移動
+pinch.wav         ：　ピンチ時の警告音
+rankup.wav        ：　GRADEアップ
+rotate.wav        ：　回転音
+shaki.wav         ：　先行回転(IRS)
+stgstar.wav       ：　流れ星出現
+timeover.wav      ：　タイムオーバー
+platinaerase.wav  ：　プラチナブロック消去
+tspin.wav         ：　ライン消し無しT-SPIN
+tserase.wav       ：　ライン消し有りT-SPIN
+ttclear.wav       ：　ゲームクリア（足切り時含む）
+up.wav            ：　ラインせり上がり
+regret.wav        ：　段位降格時
+cool.wav          ：　MASTER-HARDでCOOLが出たとき
+warning.wav       ：　攻撃系アイテム発動
+movefail.wav      ：　移動できなかったとき
+rotfail.wav       ：　回転できなかったとき
+pause.wav         ：　ポーズしたとき
+
+・blockseフォルダ（HEBORIS.TXTより転載・ほんのちょっと編集）
+      Heboris.exeと同じフォルダに、 BLOCKSEというフォルダを作成し、中に
+    Block1.wav ～ Block7.wav という名前の、7個のwavファイルを設置すると、
+    NEXTブロック登場時に音が鳴ります。
+    どの音が鳴るかは、次のNEXTブロックによって決まります。
+
+      → 1.赤(ヘボリス棒) 2.橙(L字形) 3.黄(正方形) 4.緑(Z字形)
+         5.水(T字形) 6.青(逆L字形) 7.紫(逆Z字形)
+　　（注:色表記はARS系列のもの）

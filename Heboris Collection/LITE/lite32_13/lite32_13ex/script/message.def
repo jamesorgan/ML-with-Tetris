@@ -1,0 +1,375 @@
+str help_rule[10 * 2] = 
+{
+	// Japanese
+	"オリジナル版と同じ操作性を持つ、全ての基本となるルールです。",
+	"オリジナル版のＴとＩブロックの回転を強化したルールです。窪みにはまったＴが脱出できたり、Ｉが壁際や床の上でも回転できたりします。",
+	"強力な壁蹴り機能と固定時間リセット機能を搭載した新しいルールです。床の上での回転は８回、移動は１０回まで可能です。",
+	"ＭＯＤＥＲＮルールの固定時間リセット機能を強化したルールです。床の上で１２８回まで回転や移動が可能です。最も初心者向けのルールです。",
+	"ＣＬＡＳＳＩＣ＋ルールと同じ回転法則ですが、それ以外がＭＯＤＥＲＮ＋ルールと同じというクセのあるルールです。",
+	"ＭＩＸ－Ａルールの上下の操作をＣＬＡＳＳＩＣと同じにしたルールです。ＣＬＡＳＳＩＣ＋ルールの練習用としても適しています。",
+	"回転法則はＭＯＤＥＲＮルールと同じですが、ブロックを置くとすぐに次のブロックが出現します。床の上で無限回転や無限移動が可能です。",
+	"回転法則はＭＯＤＥＲＮルールと同じですが、上下の操作がＣＬＡＳＳＩＣと同じになっています。",
+	"特徴的な回転法則を持ったルールです。ハードドロップを使用したあと何かボタンを押すとすぐに次のブロックが出現します。",
+	"ＣＯＮＦＩＧ画面のＣＵＳＴＯＭ　ＲＵＬＥで自由に設定を変更できるルールです。",
+	
+	// English
+	"Same as original Heboris rotation system.",
+	"Almost same as original Heboris rotation system. T and I block has special wallkicks.",
+	"This rule has powerful wallkicks and lock delay reset.",
+	"This rule has powerful wallkicks and very powerful lock delay reset.",
+	"Very strange rule. Rotation is same as CLASSIC+ rule, but other is same as MODERN+ rule.",
+	"Almost same as MIX-A rule, but soft drop and hard drop is same as CLASSIC rules.",
+	"Rotation is same as MODERN rules. This rule has infinite lock delay reset, but no ARE.",
+	"Rotation is same as MODERN rules, but soft drop and hard drop is same as CLASSIC rules.",
+	"This rule has characteristic rotation system. You can cancel ARE after hard drop by pressing any buttons.",
+	"Customizable rule. You can change this rule's setting in CONFIG menu.",
+};
+
+str help_mode[12 * 2] = 
+{
+	// Japanese
+	"規定レベルに達するまでにどれだけの得点を稼げるか競うモードです。落下速度は遅めです。ＴＡＭＡＹＡではレベル２００、ＮＯＶＩＣＥではレベル３００でクリアになります。",
+	"ブロックをひたすら消しながらレベル９９９を目指すモードです。レベルが上がるに連れて落下速度が早くなっていき、レベル５００で空中をワープする程の速度になります。段位認定機能があります。",
+	"ブロックの落下速度が非常に早い上級者向けのモードです。１００レベルごとに出現時間や固定時間が短くなっていきます。焦らずに落ち着いてブロックを消していきましょう。",
+	"ステージに配置されているプラチナブロックを全て消すことが目的のステージクリア型モードです。特徴の異なる４つのコースが用意されています。",
+	"どれだけ早く規定ライン数を消せるかを競うモードです。１０ラインごとにレベルが上がります。各レベルには制限時間があり、時間内に１０ライン消せなかった場合はゲームオーバーです。",
+	"壁蹴りやハードドロップが使えないモードです。ブロックが詰まるまでに稼いだ得点を競います。１０ラインごとにレベルが上がります。ブロックが詰まるまで永久にゲームを続けることができます。",
+	"ヘボリスの最果てに挑戦する超上級者向けモードです。あなたはどこまで耐えられますか？",
+	"レベル１５をクリアするまでにできるだけ得点を稼ぐモードです。ＳＱＵＡＲＥモードでは正方形を作って消すと高得点になります。",
+	"好きな速度を設定して、４０ライン消すまでの時間、または２分間に稼いだ得点を競うモードです。",
+	"２人で対戦するモードです。コンピュータと対戦することもできます。",
+	"次々と出題される課題をクリアしていくモードです。",
+	"好きな速度を設定して練習ができるモードです。",
+	
+	// English
+	"Easy mode. Main objective of this mode is earn many score before the level reaches to certain value.",
+	"Normal mode. Main objective of this mode is reach level 999 and get higher grades as possible.",
+	"Hard mode. The block falls very fast! Let's try to the god's world!",
+	"Stage clear type mode. Erase all cube blocks to beat a stage.",
+	"Erase 10 lines to advance a level, but... becareful to the time limit!",
+	"Can you get high score without wallkicks and hold?",
+	"Hardest mode! The block falls *really* fast!! Let's try the Heboris's farthest world!!",
+	"Much like to the ACE mode, but this is score attack mode. How many points can you get until clear level 15?",
+	"Simple 2 modes. Set the your favorite speed and aim the best record!",
+	"2 players VS mode. You can fight with a human or a CPU.",
+	"Complete the missions before the time limit runs out.",
+	"You can practice any game speed in this mode.",
+};
+
+str yourgrade[4] = 
+{
+	"あなたの段位は",     "Your Grade is",
+	"あなたの暫定段位は", "Grade of this game",
+};
+
+str rule_name_normal[10] = 
+{
+	"HEBORIS",
+	"TI-ARS",
+	"TI-WORLD",
+	"ACE-SRS",
+	"ACE-ARS",
+	"ACE-ARS2",
+	"DS-SRS",
+	"SRS-X",
+	"D.R.S",
+	"CUSTOM"
+};
+
+str rule_name_old[10] = 
+{
+	"TGM",
+	"TI",
+	"WORLD",
+	"WORLD2",
+	"ARS",
+	"ARS2",
+	"WORLD3",
+	"WORLD-X",
+	"DHEBO",
+	"CUSTOM"
+};
+
+str rule_name_new[10] = 
+{
+	"CLASSIC",
+	"CLASSIC+",
+	"MODERN",
+	"MODERN+",
+	"MIX-A",
+	"MIX-B",
+	"GUIDELINE",
+	"SPECIAL-S",
+	"SPECIAL-D",
+	"CUSTOM"
+};
+
+str mode_name[19] = 
+{
+	"BEGINNER",		// 0
+	"MASTER",		// 1
+	"20G",			// 2
+	"DEVIL-DOOM",	// 3 (DEVIL)
+	"VERSUS",		// 4
+	"PRACTICE",		// 5
+	"TOMOYO",		// 6
+	"ACE",			// 7
+	"MISSION",		// 8
+	"OLD STYLE",	// 9
+	"HEBO+",		// 10
+	"DEVIL",		// 11 (DEVIL-)
+	"ACE",			// 12 (ACE200)
+	"NOVICE",		// 13 (BEGINNER+)
+	"FINAL",		// 14
+	"FLASH",		// 15
+	"DEVIL-HARD",	// 16 (EASYDEVIL)
+	"SIMPLE",		// 17
+	"MARATHON",		// 18
+};
+
+str mode_select_name[12] = 
+{
+	"BEGINNER",		// 0
+	"MASTER",		// 1
+	"DEVIL",		// 2
+	"TOMOYO",		// 3
+	"ACE",			// 4
+	"OLD STYLE",	// 5
+	"FINAL",		// 6
+	"MARATHON",		// 7
+	"SIMPLE",		// 8
+	"VERSUS",		// 9
+	"MISSION",		// 10
+	"PRACTICE",		// 11
+};
+
+str ranking_category_name[42] = 
+{
+	"BEGINNER-TAMAYA",			// 0
+	"BEGINNER-NOVICE",			// 1
+	"MASTER-NORMAL",			// 2
+	"MASTER-HARD",				// 3
+	"20G-NORMAL",				// 4
+	"20G-HARD",					// 5
+	"HEBO+",					// 6
+	"DEVIL-NORMAL",				// 7
+	"DEVIL-HARD",				// 8
+	"DEVIL-DOOM",				// 9
+	"TOMOYO-NORMAL",			// 10
+	"TOMOYO-NORMAL [RANDOM]",	// 11
+	"TOMOYO-EHEART",			// 12
+	"TOMOYO-EHEART [RANDOM]",	// 13
+	"TOMOYO-TARGET",			// 14
+	"TOMOYO-TARGET [RANDOM]",	// 15
+	"TOMOYO-FLASH [LIMIT OFF]",	// 16
+	"TOMOYO-FLASH [LIMIT ON]",	// 17
+	"ACE NORMAL",				// 18
+	"ACE HI-SPEED 1",			// 19
+	"ACE HI-SPEED 2",			// 20
+	"ACE ANOTHER",				// 21
+	"ACE ANOTHER2",				// 22
+	"ACE BASIC",				// 23
+	"ACE HELL",					// 24
+	"ACE HELL-X",				// 25
+	"ACE VOID",					// 26
+	"OLD STYLE-HANDHELD",		// 27
+	"OLD STYLE-ARCADE",			// 28
+	"FINAL",					// 29
+	"MARATHON-NORMAL",			// 30
+	"MARATHON-SQUARE",			// 31
+	"MARATHON-ONI",				// 32
+	"MASTER-EASY",				// 33
+	"20G-EASY",					// 34
+	"DUMMY 35",					// 35
+	"DUMMY 36",					// 36
+	"DUMMY 37",					// 37
+	"DUMMY 38",					// 38
+	"DUMMY 39",					// 39
+	"SIMPLE 40LINES",			// 40
+	"SIMPLE ULTRA",				// 41
+};
+
+int ranking_category_color[42] = 
+{
+	4,4,1,1,1,1,6,2,2,2,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,0,2,1
+};
+
+str ranking_table_top[40] = 
+{
+	"RANK  NAME  SCORE   LEVEL  TIME",	// BEGINNER-TAMAYA
+	"RANK  NAME  SCORE   LEVEL  TIME",	// BEGINNER-NOVICE
+	"RANK  NAME  GRADE   LEVEL  TIME",	// MASTER-NORMAL
+	"RANK  NAME  GRADE   LEVEL  TIME",	// MASTER-HARD
+	"RANK  NAME  GRADE   LEVEL  TIME",	// 20G-NORMAL
+	"RANK  NAME  GRADE   LEVEL  TIME",	// 20G-HARD
+	"RANK  NAME  SCORE   LEVEL  TIME",	// HEBO+
+	"RANK  NAME  SCORE   LEVEL  TIME",	// DEVIL-NORMAL
+	"RANK  NAME  GRADE   LEVEL  TIME",	// DEVIL-HARD
+	"RANK  NAME  GRADE   LEVEL  TIME",	// DEVIL-DOOM
+	"RANK  NAME  STAGE   CLEAR  TIME",	// TOMOYO-NORMAL
+	"RANK  NAME  STAGE   CLEAR  TIME",	// TOMOYO-NORMAL [RANDOM]
+	"RANK  NAME  STAGE          TIME",	// TOMOYO-EHEART
+	"RANK  NAME  STAGE          TIME",	// TOMOYO-EHEART [RANDOM]
+	"RANK  NAME  STAGE          TIME",	// TOMOYO-TARGET
+	"RANK  NAME  STAGE          TIME",	// TOMOYO-TARGET [RANDOM]
+	"RANK  NAME  SCORE   STAGE  TIME",	// TOMOYO-FLASH [LIMIT OFF]
+	"RANK  NAME  SCORE   STAGE  TIME",	// TOMOYO-FLASH [LIMIT ON]
+	"RANK  NAME  LINES   LEVEL  TIME",	// ACE NORMAL
+	"RANK  NAME  LINES   LEVEL  TIME",	// ACE HI-SPEED 1
+	"RANK  NAME  LINES   LEVEL  TIME",	// ACE HI-SPEED 2
+	"RANK  NAME  LINES   LEVEL  TIME",	// ACE ANOTHER
+	"RANK  NAME  LINES   LEVEL  TIME",	// ACE ANOTHER2
+	"RANK  NAME  LINES   LEVEL  TIME",	// ACE BASIC
+	"RANK  NAME  LINES   LEVEL  TIME",	// ACE HELL
+	"RANK  NAME  LINES   LEVEL  TIME",	// ACE HELL-X
+	"RANK  NAME  LINES   LEVEL  TIME",	// ACE VOID
+	"RANK  NAME  SCORE   LEVEL  TIME",	// OLD STYLE-HANDHELD
+	"RANK  NAME  SCORE   LEVEL  TIME",	// OLD STYLE-ARCADE
+	"RANK  NAME  SCORE   LEVEL  TIME",	// FINAL
+	"RANK  NAME  SCORE   LINES  TIME",	// MARATHON-NORMAL
+	"RANK  NAME  SCORE   SQUARE TIME",	// MARATHON-SQUARE
+	"RANK  NAME  SCORE   LINES  TIME",	// MARATHON-ONI
+	"RANK  NAME  GRADE   LEVEL  TIME",	// MASTER-EASY
+	"RANK  NAME  GRADE   LEVEL  TIME",	// 20G-EASY
+	"RANK  NAME                 TIME",	// 
+	"RANK  NAME                 TIME",	// 
+	"RANK  NAME                 TIME",	// 
+	"RANK  NAME                 TIME",	// 
+	"RANK  NAME                 TIME",	// 
+};
+
+// BGM名
+str music_name[21] = 
+{
+	"MAIN BGM 1", // 1
+	"MAIN BGM 2", // 2
+	"MAIN BGM 3", // 3
+	"MAIN BGM 4", // 4
+	"MAIN BGM 5", // 5
+	"MAIN BGM 6", // 6
+	"ENDING", // 7
+	"BEGINNER ENDING", // 8
+	"TOMOYO", // 9
+	"TOMOYO EXTRA", // 10
+	"VERSUS", // 11
+	"TITLE", // 12
+	"MODE SELECT", // 13
+	"NAME ENTRY", // 14
+	"TOMOYO EHEART", // 15
+	"ACE MODE", // 16
+	"THEME OF EXTRA MISSIONS", // 17
+	"THEME OF GRAND & STAR ROAD", // 18
+	"THEME OF ANOTHER ROAD", // 19
+	"TOMOYO EHEART FINAL", // 20
+	"THEME OF TRIAL S5-S6", // 21
+};
+
+str config_item_name[39] = 
+{
+	"MIRROR BLOCK",		// 0
+	"ROLL ROLL",		// 1
+	"DEATH BLOCK",		// 2
+	"X-RAY",			// 3
+	"COLOR BLOCK",		// 4
+	"ROTATE LOCK",		// 5
+	"HIDE NEXT",		// 6
+	"MAGNET BLOCK",		// 7
+	"TIME STOP",		// 8
+	"HOLD LOCK",		// 9
+	">< REVERSE",		// 10
+	"BOOST FIRE",		// 11
+	"FEVER!",			// 12
+	"kn REVERSE",		// 13
+	"REMOTE CONTROL",	// 14
+	"DARK BLOCK",		// 15
+	"k DEL FIELD",		// 16
+	"n DEL FIELD",		// 17
+	"DEL EVEN",			// 18
+	"TRANS FORM",		// 19
+	"LASER",			// 20
+	"NEGA FIELD",		// 21
+	"SHOT GUN!",		// 22
+	"EXCHG FIELD",		// 23
+	"HARD BLOCK",		// 24
+	"SHUFFLE FIELD",	// 25
+	"RANDOM",			// 26
+	"FREE FALL",		// 27
+	"< MOV FIELD",		// 28
+	"> MOV FIELD",		// 29
+	"180 FIELD",		// 30
+	"16T",				// 31
+	"REFLECT",			// 32
+	"DOUBLE",			// 33
+	"ALL CLEAR",		// 34
+	"MISS",				// 35
+	"COPY FIELD",		// 36
+	"FAKE NEXT",		// 37
+	"[] BLOCK",			// 38
+};
+
+// 段位名
+str		gname[33] = 
+{
+	 "9",  "8",  "7",  "6",  "5",  "4",  "3",  "2",  "1",	//  0～ 8
+	"S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9",	//  9～17
+	"M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9",	// 18～26
+	 "M", "MK", "MV", "MO", "MM", "GM"						// 27～32
+};
+
+// DEVIL-DOOM段位名
+str		dgname[15] = 
+{
+	"1",													// 0
+	"S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9",	// 1～9
+	"S10", "S11", "S12", "S13", "GOD"						// 10～14
+};
+
+// DEVIL-HARD段位名
+str		dgname2[15] = 
+{
+	"1",													// 0
+	"S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9",	// 1～9
+	"S10", "S11", "S12", "S13", "GM"						// 10～14
+};
+
+// MASTER-EASY段位／裏段位表示用
+str		sgname[19] = 
+{
+	 "9",  "8",  "7",  "6",  "5",  "4",  "3",  "2",  "1",	//  0～ 8
+	"S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9",	//  9～17
+	"GM"													// 18
+};
+
+str		delayname[4 * 2] = 
+{
+	"SYUTUGEN",
+	"SYOUKYO ",
+	"SETTYAKU",
+	"YOKOTAME",
+	"ARE     ",
+	"LINE    ",
+	"LOCK    ",
+	"DAS     ",
+};
+
+// チュートリアル
+str		msg_howtoplay[7 * 2] = 
+{
+	// Japanese
+	"ヘボリスは、上から落ちてくるブロックを隙間無く横に揃えて消していくアクションパズルゲームです。",
+	"上から落ちてくるブロックは左キーや右キーで横に移動させることができます。",
+	"ＡボタンまたはＣボタンを押すと回転します。Ｂボタンを押すと逆方向に回転します。",
+	"下キーを押すと早くブロックが落下します。上キーを押すと一瞬で落下します。",
+	"ブロックを横に隙間無く揃えてラインを作ると、揃ったラインが消えます。",
+	"Ｄボタンを押すとホールドを使用できます。１回目は操作中のブロックをホールド欄に移動させます。２回目以降はホールド欄のブロックと交換します。ホールドは、一度使うとブロックを固定させるまで使用できません。",
+	"ブロックがフィールド上部まで積みあがり、次のブロックが落ちてこれなくなるとゲームオーバーです。",
+	
+	// English
+	"Heboris is an action puzzle game. Objective of this game is arrange the blocks and fill up the line without making gaps.",
+	"Block will fall from the top of playfield. You can move the block to sideways by pressing left key or right key.",
+	"You can rotate the block by pressing A or C button. And you can rotate the block to opposite direction by pressing B button.",
+	"If you press down key, the block will fall faster. If you press up key, the block will drop to bottom instantly.",
+	"If each line is completed, they will disappear from the playfield.",
+	"You can use hold function by pressing D button. When used, current block will move to hold box. Hold function cannot be used again until the block locks.",
+	"If the block reaches to top of the playfield, your game will end.",
+};

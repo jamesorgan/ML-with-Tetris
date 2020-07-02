@@ -1,0 +1,5 @@
+このフォルダにはTOMOYOモードのエディット面、およびMISSIONモードのエディットコースが置かれます。
+このファイル(placeholder.txt)は削除しても構いません。
+
+Your edited Tomoyo stages/Mission courses is put on this folder.
+You may delete this (placeholder.txt) file.

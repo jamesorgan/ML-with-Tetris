@@ -1,0 +1,335 @@
+// ミッション名
+str mission_name_jp[43] = 
+{
+	"レベルスター",			// 0
+	"ビッグ",
+	"ダブル",
+	"トリプル",
+	"ヘボリス",
+	"サイクル",				// 5
+	"ターゲット",
+	"イレイサー",
+	"ハイスピード１",
+	"ハイスピード２",
+	"アナザー",				// 10
+	"シングル",
+	"X-RAY",
+	"カラー",
+	"ロールロール",
+	"ミラー",				// 15
+	"T-スピン",
+	"回転不可",
+	"NEXT不可視",
+	"DEVIL 800",
+	"DEVIL 1200",			// 20
+	"GARBAGE",
+	"オールドスタイル",
+	"耐久",
+	"上下左右逆転",
+	"ブラインド",			// 25
+	"全消し",
+	"コンボ",
+	"B to B ヘボリス",
+	"OOBAKA",
+	"ブロックオーダー",		// 30
+	"シングルオーダー",
+	"ダブルオーダー",
+	"逆ﾄﾘﾌﾟﾙｵｰﾀﾞｰ",
+	"中抜きダブル",
+	"中抜きトリプル",		// 35
+	"2段抜きダブル",
+	"T-スピン ダブル",
+	"トリプルオーダー",
+	"イレイサー２",
+	"ｲﾚｲｻｰﾍﾎﾞﾘｽ",			// 40
+	"スクウェア",
+	"ｺﾞｰﾙﾄﾞｽｸｳｪｱ",
+};
+
+str mission_name_en[43] = 
+{
+	"Level star",
+	"Big",
+	"Double",
+	"Triple",
+	"Heboris",
+	"Cycle",
+	"Target",
+	"Eraser",
+	"Hi-Speed 1",
+	"Hi-Speed 2",
+	"Another",
+	"Single",
+	"X-Ray",
+	"Color",
+	"Roll Roll",
+	"Mirror",
+	"T-spin",
+	"Rotate Lock",
+	"Hide NEXT",
+	"DEVIL 800",
+	"DEVIL 1200",
+	"Garbage",
+	"Old style",
+	"Endurance",
+	"Reverse Control",
+	"Blind",
+	"All Clear",
+	"Combo",
+	"B to B Heboris",
+	"OOBAKA",
+	"Block Order",
+	"Single Order",
+	"Double Order",
+	"Re Triple Order",
+	"Split Double",
+	"Split Triple",
+	"Split EX-Double",
+	"T-Spin Double",
+	"Triple Order",
+	"Eraser 2",
+	"Eraser Heboris",
+	"Square",
+	"Gold Square",
+};
+
+str mission_name_editor[43] = 
+{
+	"LEVELSTAR",
+	"BIG",
+	"DOUBLE",
+	"TRIPLE",
+	"HEBORIS",
+	"CYCLE",
+	"TARGET",
+	"ERASER",
+	"HI-SPEED1",
+	"HI-SPEED2",
+	"ANOTHER",
+	"SINGLE",
+	"X-RAY",
+	"COLOR",
+	"ROLL ROLL",
+	"MIRROR",
+	"T-SPIN",
+	"ROTATELOCK",
+	"HIDE NEXT",
+	"DEVIL 800",
+	"DEVIL 1200",
+	"GARBAGE",
+	"OLD STYLE",
+	"ENDURANCE",
+	"kn<> REV",
+	"BLIND",
+	"ALL CLEAR",
+	"COMBO",
+	"BTOB 4L",
+	"OOBAKA",
+	"BLK ORDER",
+	"S ORDER",
+	"D ORDER",
+	"RT ORDER",
+	"SPLIT D",
+	"SPLIT T",
+	"SPLIT D2",
+	"T-SPIN 2",
+	"T ORDER",
+	"ERASER 2",
+	"ERASER 4L",
+	"SQUARE",
+	"GOLDSQUARE",
+};
+
+// 指令
+str mission_info_jp[43] = 
+{
+	"%dライン消せ！",//0
+	"%dライン消せ！",//1
+	"%d回ダブルを決めろ！",
+	"%d回トリプルを決めろ！",
+	"%d回ヘボリスを決めろ！",
+	"サイクルを決めろ！",
+	"%dステージクリアしろ！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"%dライン消せ！",//10
+	"%d回シングルを決めろ！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"T-SPINで%d回\nラインを消せ！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"%dライン消せ！",//20
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"時間切れまで耐えろ！\n時間切れになったら\n%dブロック置け！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"%d回全消しを決めろ！",
+	"%dコンボを決めろ！",
+	"%d回ヘボリスを決めろ！\nヘボリス以外で\nノルマがリセット！",
+	"%dブロック置け！",
+	"\n\nを使って%dライン消せ！",//30
+	"\n\nを使って\n%d回シングルを決めろ！",
+	"\n\nを使って\n%d回ダブルを決めろ！",
+	"\n\n以外を使って\n%d回トリプルを決めろ！",
+	"中抜きで%d回\nダブルを決めろ！",
+	"中抜きで%d回\nトリプルを決めろ！",
+	"2段抜きで%d回\nダブルを決めろ！",
+	"T-SPINで%d回\nダブルを決めろ！",
+	"\n\nを使って\n%d回トリプルを決めろ！",
+	"%dライン消せ！",
+	"線のある所で%d回\nヘボリスを決めろ！",
+	"4x4の正方形を%d個作れ！",
+	"1種類のブロックだけで\n4x4の正方形を%d個作れ！",
+};
+
+str mission_info_en[43] = 
+{
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase 2 lines at once\n%d time(s)!",
+	"Erase 3 lines at once\n%d time(s)!",
+	"Erase 4 lines at once\n%d time(s)!",
+	"Do all kinds of\nline erase!",
+	"Clear %d stage(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase 1 line only\n%d time(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase the line \nby T-SPIN %d time(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Do not top out!\nPut %d blocks\nafter the time limit!",
+	"Erase %d line(s)!",
+	"Erase %d line(s)!",
+	"Erase all blocks\n%d time(s)!",
+	"Do %d combo(s)!",
+	"Erase 4 lines at once\n%d times!\n\nDo not erase\n3 or less lines!",
+	"Put %d block(s)!",
+	"Erase %d line(s) by\n\n\n\nblocks!",
+	"Erase 1 line only\n%d time(s) by\n\n\nblocks!",
+	"Erase 2 lines at once\n%d time(s) by\n\n\nblocks!",
+	"Erase 3 lines at once\n%d time(s) by\nother than\n\n\nblocks!",
+	"Erase 2 lines at once\nwith separated\nby one or two gap rows\n%d time(s)!", 
+	"Erase 3 lines at once\nwith separated\nby one gap row\n%d time(s)!",
+	"Erase 2 lines at once\nwith separated\nby two gap rows\n%d time(s)!",
+	"Erase 2 lines at once\nby T-SPIN %d time(s)!",
+	"Erase 3 lines at once\n%d time(s) by\n\n\nblocks!",
+	"Erase %d line(s)!",
+	"Erase 4 lines at once\non the highlighted\nline(s) %d time(s)!",
+	"Make 4x4 square\n%d time(s)!",
+	"Make 4x4 square\nby only 1 kind block\n%d time(s)!",
+};
+
+// 指令２
+str mission_info2_jp[9] = 
+{
+	"\nﾀﾞﾌﾞﾙ以上でもｶｳﾝﾄ！",
+	"\nﾄﾘﾌﾟﾙ以上でもｶｳﾝﾄ！",
+	"\nﾍﾎﾞﾘｽでもｶｳﾝﾄ！",
+	"\nシングル以外で\nノルマがリセット！",
+	"\nダブル以外で\nノルマがリセット！",
+	"\nトリプル以外で\nノルマがリセット！",
+	"\nヘボリス以外で\nノルマがリセット！",
+	"\n（ダブル以上のみ）",
+	"\nホールドしたブロック\nでラインを消せ！",
+};
+
+str mission_info2_en[9] = 
+{
+	"\nAlso counts\n2 or more lines!",
+	"\nAlso counts\n3 or more lines!",
+	"\nAlso counts\n4 lines!",
+	"\nDo not erase\n2 or more lines!",
+	"\nDo not erase\nnon 2 lines!",
+	"\nDo not erase\nnon 3 lines!",
+	"\nDo not erase\n3 or less lines!",
+	"\n(Only counts\n2 or more lines)",
+	"\nErase the line\nby hold blocks!",
+};
+
+// 拡張ミッション名
+str mission_ext_name_jp[7] = 
+{
+	"シングルSP",	// -1
+	"ダブルSP",		// -2
+	"トリプルSP",	// -3
+	"BASIC",		// -4
+	"VOID",			// -5
+	"FINAL",		// -6
+	"速度固定",		// -7
+};
+
+str mission_ext_name_en[7] = 
+{
+	"Single SP",
+	"Double SP",
+	"Triple SP",
+	"BASIC",
+	"VOID",
+	"FINAL",
+	"Speed Lock",
+};
+
+str mission_ext_name_editor[7] = 
+{
+	"SINGLE SP",
+	"DOUBLE SP",
+	"TRIPLE SP",
+	"BASIC",
+	"VOID",
+	"FINAL",
+	"SPEEDLOCK",
+};
+
+// 拡張指令
+str mission_ext_info_jp[7] = 
+{
+	"%d回シングルを決めろ！\nシングル以外で\nノルマがリセット！",
+	"%d回ダブルを決めろ！\nダブル以外で\nノルマがリセット！",
+	"%d回トリプルを決めろ！\nトリプル以外で\nノルマがリセット！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+	"%dライン消せ！",
+};
+
+str mission_ext_info_en[7] = 
+{
+	"Erase 1 line only\n%d time(s)!\nDo not erase\n2 or more lines!",
+	"Erase 2 lines at once\n%d time(s)!\nDo not erase\nnon 2 lines!",
+	"Erase 3 lines at once\n%d time(s)!\nDo not erase\nnon 3 lines!",
+	"Erase %d lines!",
+	"Erase %d lines!",
+	"Erase %d lines!",
+	"Erase %d lines!",
+};
+
+// その他
+str mission_final_line[2] = 
+{
+	"\n最後のラインを\nダブルで消せ！",
+	"\nLast erase 2 lines!"
+};
+
+str mission_timelimit[4] = 
+{
+	"制限時間 ",
+	"Time ",
+	"無制限",
+	"No Limit",
+};

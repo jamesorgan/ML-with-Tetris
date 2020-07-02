@@ -1,0 +1,4 @@
+script/gameinit.c(9) : importで示しているファイルが存在しない
+script/gameinit.c(72) : 関数 FillMemory が未解決です（実体が定義されていません）
+
+	スクリプトのコンパイルエラー内容は、以上です。

@@ -1,0 +1,5 @@
+このフォルダにはスクリーンショット機能で作成されたビットマップファイルが置かれます。
+このファイル(placeholder.txt)は削除しても構いません。
+
+Screen shots is put on this folder.
+You may delete this (placeholder.txt) file.

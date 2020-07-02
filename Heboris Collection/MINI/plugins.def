@@ -1,0 +1,21 @@
+include "./plugin_basic/ars.c"
+include "./plugin_basic/srs.c"
+include "./plugin_basic/drs.c"
+include "./plugin_extra/master_normal.c"
+include "./plugin_extra/devil_normal.c"
+include "./plugin_basic/practice.c"
+include "./plugin_net/net_standard.c"
+include "./plugin_net/net_line.c"
+include "./plugin_net/net_ultra.c"
+
+void executePlugin(int player, int event, int *param) {
+	arsPluginEvent(player, event, param);
+	srsPluginEvent(player, event, param);
+	drsPluginEvent(player, event, param);
+	masnPluginEvent(player, event, param);
+	dvlPluginEvent(player, event, param);
+	praPluginEvent(player, event, param);
+	netsPluginEvent(player, event, param);
+	netlPluginEvent(player, event, param);
+	netuPluginEvent(player, event, param);
+}

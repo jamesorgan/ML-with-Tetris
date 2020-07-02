@@ -1,0 +1,32 @@
+◆スクリプトファイル
+gameinit.c			初期化
+gamestart.c			ゲーム全般の処理
+config.c			設定画面
+view.c				表示処理
+move.c				ブロックの移動処理（全ルール共通）
+effect.c			ブロック消去エフェクト
+sound.c				BGM関連の処理
+practice.c			PRACTICEモード
+tomoyo.c			TOMOYOモード
+ranking.c			ランキング
+replay.c			リプレイ
+sectime.c			セクションタイムランキング
+mission.c			MISSIONモード
+grade.c				MASTERモードの段位
+cpu.c				コンピュータの思考ルーチン
+item.c				アイテム
+stdranking.c		STANDARDモードのランキング
+favorites.c			PRACTICEなどの速度設定（FAVORITES）
+user.c				プレイヤーデータ
+screencfg.c			SCREEN.SAVの読み書き
+flexdraw.c			高解像度対応描画関数（高解像度版のみ使用）
+
+◆設定ファイル
+block.def			ブロック
+message.def			ゲームに出てくる文章
+mission_info.def	MISSIONモードに出てくる文章
+speed.def			速度
+
+◆ゲームの動作には関係ない説明ファイル
+scriptlist.txt		このファイル
+changelog.txt		LITE31.8以前の更新履歴

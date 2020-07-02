@@ -1,0 +1,294 @@
+-------------------------------------------------
+付属のモードプラグインの説明
+-------------------------------------------------
+
+【プラグインファイル一覧】
+plugin_basic/cascade.c           … CASCADE
+plugin_basic/dummy.c             … DUMMY
+plugin_basic/marathon_normal.c   … MARATHON-NORMAL
+plugin_basic/marathon_oni.c      … MARATHON-ONI
+plugin_basic/original_20g.c      … ORIGINAL-20G
+plugin_basic/original_beginner.c … ORIGINAL-BEGINNER
+plugin_basic/original_devil.c    … ORIGINAL-DEVIL
+plugin_basic/original_master.c   … ORIGINAL-MASTER
+plugin_basic/practice.c          … PRACTICE
+plugin_basic/puzzle.c            … PUZZLE
+plugin_basic/rhythm.c            … RHYTHM
+plugin_basic/simple100.c         … SIMPLE-100LINES
+plugin_basic/simple40.c          … SIMPLE-40LINES
+plugin_basic/simpleultra.c       … SIMPLE-ULTRA
+plugin_basic/square.c            … SQUARE
+plugin_basic/sticky.c            … STICKY
+plugin_basic/vs_endless.c        … VS-ENDLESS
+plugin_basic/vs_line.c           … VS-LINE
+plugin_basic/vs_standard.c       … VS-STANDARD
+plugin_basic/vs_ultra.c          … VS-ULTRA
+
+plugin_extra/ace_another.c       … ACE-ANOTHER
+plugin_extra/ace_another_plus.c  … ACE-ANOTHER+
+plugin_extra/ace_another_plus2.c … ACE-ANOTHER+2
+plugin_extra/ace_another2.c      … ACE-ANOTHER2
+plugin_extra/ace_hispeed1.c      … ACE-HI SPEED 1
+plugin_extra/ace_hispeed2.c      … ACE-HI SPEED 2
+plugin_extra/ace_normal.c        … ACE-NORMAL
+plugin_extra/ace_normal_plus.c   … ACE-NORMAL+
+plugin_extra/ace200_basic.c      … ACE200-BASIC
+plugin_extra/ace200_hell.c       … ACE200-HELL
+plugin_extra/ace200_hellx.c      … ACE200-HELL-X
+plugin_extra/ace200_void.c       … ACE200-VOID
+plugin_extra/beginner_score.c    … BEGINNER-SCORE
+plugin_extra/beginner_tamaya.c   … BEGINNER-TAMAYA
+plugin_extra/devil_doom.c        … DEVIL-DOOM
+plugin_extra/devil_hard.c        … DEVIL-HARD
+plugin_extra/devil_normal.c      … DEVIL-NORMAL
+plugin_extra/devil_quake.c       … DEVIL-QUAKE
+plugin_extra/final.c             … FINAL
+plugin_extra/hebop.c             … HEBO+
+plugin_extra/master_easy.c       … MASTER-EASY
+plugin_extra/master_extra.c      … MASTER-EXTRA
+plugin_extra/master_hard.c       … MASTER-HARD
+plugin_extra/master_normal.c     … MASTER-NORMAL
+plugin_extra/mission_basic.c     … MISSION-BASIC
+plugin_extra/tomoyo_flash.c      … TOMOYO-FLASH
+plugin_extra/tomoyo_normal.c     … TOMOYO-NORMAL
+
+plugin_net/net_line.c            … NET-LINE
+plugin_net/net_standard.c        … NET-STANDARD
+plugin_net/net_ultra.c           … NET-ULTRA
+
+【各モードの説明】
+CASCADE
+	連鎖の要素を追加したモードです。
+	ラインを消すと上に乗っていたブロックが下に落下します。
+	うまくブロックを積めば連鎖を起こすことができます。
+	一度に多くのラインを消したり、連鎖したりすることで高得点が得られます。
+	ラインを消すたびにGOALの値が減っていき、0以下になるとレベルが上がります。
+	レベル15をクリアすると終了です。
+
+DUMMY
+	ダミーのモードです。
+	ゲームオーバーになるまで永遠に続きます。
+	このモードにはレベルアップによるスピードの変化はありません。
+
+MARATHON-NORMAL
+	レベル15をクリアするまでにできるだけ多くのテクニックを駆使して高得点を稼ぐモードです。
+	・Ｔ字ブロックを狭い隙間にはめ込む「T-SPIN」（ライン消しと組み合わせるとより高得点）
+	・ヘボリスかT-SPINを連続で行う「BACK TO BACK」（ヘボリスかT-SPIN以外でラインを消すまで持続）
+	・2回以上連続でラインを消す「COMBO」（ラインを消さずにブロックを置くまで持続）
+	これらのテクニックで高得点を得られます。
+	ラインを消すたびにGOALの値が減っていき、0以下になるとレベルが上がります。
+	レベル15をクリアすると終了です。
+
+MARATHON-ONI
+	MARATHON-NORMALモードとほぼ同じルールですが、ブロックの落下速度が非常に速くなっています。
+	また、ゲームオーバーになるまで永遠に続きます。（速度変化はレベル15でストップ）
+
+ORIGINAL-20G
+	原作のヘボリスの20Gモードを再現したモードです。ゲームオーバーになるまで永遠に続きます。
+
+ORIGINAL-BEGINNER
+	原作のヘボリスのBEGINNERモードを再現したモードです。ゲームオーバーになるまで永遠に続きます。
+
+ORIGINAL-MASTER
+	原作のヘボリスのMASTERモードを再現したモードです。ゲームオーバーになるまで永遠に続きます。
+
+ORIGINAL-DEVIL
+	原作のヘボリスのDEVILモードを再現したモードです。ゲームオーバーになるまで永遠に続きます。
+
+PRACTICE
+	好きな速度を設定していろいろな練習ができるモードです。
+	このモードにはレベルアップによるスピードの変化はありません。
+
+PUZZLE
+	決められたブロックを使って目標を達成するモードです。
+	目標は以下の3種類があります。
+	TARGET：全てのプラチナブロック（丸い球のブロック）を消す
+	BRAVO：全消しする
+	○LINE：○ライン消す
+
+RHYTHM
+	ゲームオーバーになるまでに何個のブロックを置いたかを競うモードです。
+	このモードでは一定のテンポでブロックが降ってきます。
+	一定時間が経過すると強制的にブロックが固定されます。
+	逆に一定時間が経過する前に自分で固定させてもなかなか次のブロックが出現しません。
+	ブロックを6個置くたびにテンポが速くなります。
+
+SIMPLE-100LINES
+	どれだけ早く100ライン以上消すことができるかを競うモードです。
+	好きな速度を設定して挑戦することができます。
+
+SIMPLE-40LINES
+	どれだけ早く40ライン以上消すことができるかを競うモードです。
+	好きな速度を設定して挑戦することができます。
+
+SIMPLE-ULTRA
+	2分間でどれだけ多くのラインを消すことができるか
+	または3分間でどれだけ多くのスコアを得ることができるかを競うモードです。
+	好きな速度を設定して挑戦することができます。
+
+SQUARE
+	4x4のサイズの正方形を作っていくモードです。
+	２種類以上のブロックで正方形を作ると銀に、１種類のブロックだけで正方形を作ると金の正方形ができます。
+	金の正方形は銀の正方形2個分の価値があります。
+	ラインを消すと、ブロックの破片が灰色になります。灰色のブロックが混じっていると正方形ができません。
+	
+	T-SPINで１つだけラインを消すと、消したラインから下のブロックが
+	２つ以上ラインを消すと全てのブロックが灰色になり、下に落下します。
+	行き詰ったときに役に立ちますが、既に作った正方形が無くなってしまうという弱点があります。
+	
+	ラインを消すたびにGOALの値が減っていき、0以下になるとレベルが上がります。
+	正方形を含むラインを消すとより多くGOALの値が減ります。
+	レベル15をクリアすると終了です。
+
+STICKY
+	マルチカラーブロックをうまく使って邪魔ブロックを消していくモードです。
+	複数の色で構成されたブロック（マルチカラーブロック）は、固定されると色ごとに分離して下に落ちていきます。
+	同じ色のブロックはくっつきます。くっついていないブロックは下に空間があれば落下します。
+	一番下のラインを消すとレベルが上がり、レベル15をクリアすると終了です。
+	早くレベルをクリアするとボーナス得点が得られます。
+
+VS-ENDLESS
+	何度でも復活するコンピュータを相手に永遠と勝負を繰り返すモードです。
+	基本ルールはVS-STANDARDと同じです。
+	敵を倒すとレベルが上がり、ブロックの落下スピードと敵の行動スピードが速くなりますが、得られるスコアも高くなります。
+	レベルは1～20の20段階が存在し、20以降はレベルの上昇はありません。
+
+VS-LINE
+	相手よりも先に規定ライン数を消すと勝利になる対戦モードです。規定ライン数は設定画面で変更できます。
+	相手に邪魔されることはありません。
+
+VS-STANDARD
+	普通の対戦モードです。
+	一度に2ライン以上消すと相手に邪魔ブロックを送ることができます。
+	相手をゲームオーバーにさせると勝利です。
+
+VS-ULTRA
+	SIMPLE-ULTRAモードと同じルールで戦う対戦モードです。
+	2分間で消したライン数、または3分間で獲得したスコアで勝敗が決まります。
+	相手に邪魔されることはありません。
+
+ACE-ANOTHER
+ACE-ANOTHER+
+ACE-ANOTHER+2
+ACE-ANOTHER2
+ACE-HI SPEED 1
+ACE-HI SPEED 2
+ACE-NORMAL
+ACE-NORMAL+
+	できるだけ早く150ライン消すことが目的のモードです。
+	10ラインごとにレベルが上がり、ブロックの落下速度が速くなります。
+	各レベルには制限時間があり、レベルが上がればリセットされます。
+	ただし、一部のモードでは後半になればなるほど制限時間が短くなっていきます。
+	
+	・難易度一覧（簡単な順）
+	ACE-NORMAL＜ACE-NORMAL+＜ACE-HI SPEED 1＜ACE-HI SPEED 2＜ACE-ANOTHER＜ACE-ANOTHER2＜ACE-ANOTHER+＜ACE-ANOTHER+2
+
+ACE200-BASIC
+	制限時間内に200ライン消すことが目的のモードです。
+	最初はブロックの落下速度は緩やかですが、いきなり制限時間が厳しく設定されています。
+	10ラインごとにレベルが上がり、制限時間はリセットされますが
+	レベルが上がると落下速度も制限時間も厳しくなっていきます。
+
+ACE200-HELL
+	制限時間内に200ライン消すことが目的のモードです。
+	このモードにはレベルアップによるスピードの変化はありません。
+	しかしそのスピードはかなり厳しく設定されており、気を抜くとすぐに積みあがります。
+	このモードでは置いたブロックは線だけ表示されます。
+	レベルが上がると制限時間は厳しくなり、恐ろしい仕掛けも発動するとか…
+
+ACE200-HELL-X
+	制限時間内に200ライン消すことが目的のモードです。
+	このモードにはレベルアップによるスピードの変化はありません。
+	スピードや制限時間はACE200-HELLと同じですが、このモードではブロックに色がなく、常に[]のマークで表示されます。
+	レベルが上がると発動する仕掛けも異なるとか…
+
+ACE200-VOID
+	制限時間内に200ライン消すことが目的のモードです。
+	ACE200系のモードの中で最強の難易度を誇ります。
+	仕掛け類は一切ありません。しかし…
+
+BEGINNER-SCORE
+	レベル300を目指す初心者向けモードです。
+	レベル100と200でお助けアイテムが出現します。
+	早くレベル300に到達するとボーナス得点が入ります。
+
+BEGINNER-TAMAYA
+	レベル200を目指す初心者向けモードです。
+	お助けアイテムはありません。
+	ラインを消すと花火が打ちあがり、その花火の数がそのままスコアになります。
+	連続で複数のラインを消すとより多くの花火が打ちあがります。
+
+DEVIL-DOOM
+	ブロックの落下速度が非常に速い上級者向けのモードです。
+	レベル500とレベル1000で恐ろしい仕掛けが発動します。
+
+DEVIL-HARD
+	ブロックの落下速度がかなり速い中級～上級者向けのモードです。
+	基本はDEVIL-DOOMと同じですが、速度は緩めになっています。
+
+DEVIL-NORMAL
+	ブロックの落下速度が少し速い中級者向けのモードです。
+	DEVIL系モードの中でも一番簡単ですが、レベル500以降の世界を見るためにはかなりの腕前が必要となります。
+
+DEVIL-QUAKE
+	ブロックの落下速度が非常に速い上級者向けのモードです。
+	基本はDEVIL-DOOMと同じですが、ブロックが固定されるまでの猶予時間がDEVIL-DOOMに比べて短くなっています。
+	クリアするには様々なテクニックと短い時間での判断力が必要になります。
+
+FINAL
+	ヘボリスの最果てに挑戦する超上級者向けのモードです。
+	究極のテクニックと判断力、そして集中力が求められます。
+	DEVIL系モードやACE200系モードを超えた常識外の速度でブロックが出現＆固定されていきます。
+	あなたはどこまで耐えられますか？
+
+HEBO+
+	下から時々灰色のブロックがせり上がってくるモードです。
+	レベルが上がるに連れてせり上がるペースが早くなっていきます。
+	ブロックの落下速度は500で最高に達し、それ以降は変化しません。
+	レベル999に到達するとクリアです。
+
+MASTER-EASY
+	レベル999を目指すモードです。
+	このモードには段位認定機能があり、プレイヤーの現在のスコアを元にして上がっていきます。
+	段位は9で始まり、普通に得られる段位としてはS9が最高です。しかし、その上もあるという噂があります。
+	ブロックの落下速度は500で最高に達し、それ以降は変化しません。
+
+MASTER-EXTRA
+	レベル999を目指すモードです。
+	このモードにも段位認定機能がありますが、ゲーム終了まで表示されません。
+	ブロックの落下速度はプレイヤーの腕前に応じて変化し、最短でレベル300で最高速になります。
+	それ以降もプレイヤーの腕前に応じてブロックの出現にかかる時間や固定されるまでの時間などが短くなっていきます。
+
+MASTER-HARD
+	レベル999を目指すモードです。
+	基本はMASTER-EXTRAと同じですが、スピードの変化の仕方はかなり異なります。
+
+MASTER-NORMAL
+	レベル999を目指すモードです。
+	このモードにも段位認定機能がありますが、目標スコアなどは表示されません。
+	ブロックの落下速度は500で最高に達しますが、その後もブロックの出現にかかる時間や固定されるまでの時間などが短くなっていきます。
+
+MISSION-BASIC
+	制限時間内にミッションをクリアしていくモードです。
+	画面左には指示が表示され、制限時間内に達成すれば次の指示が始まります。
+
+TOMOYO-FLASH
+	フィールド内のプラチナブロック（丸い玉が埋め込まれているブロック）を全て消すことが目的のモードです。
+	全100面ですが、その全てをクリアする必要はなく、ステージクリア後に数面先のステージを選ぶことが可能です。
+
+TOMOYO-NORMAL
+	フィールド内のプラチナブロック（丸い玉が埋め込まれているブロック）を全て消すことが目的のモードです。
+	このモードではステージの制限時間とゲーム全体の制限時間の2種類の制限時間があります。
+	前者はステージ開始時に1分から始まり、時間切れになると強制的に次のステージに進まされます。
+	後者はゲーム開始時に3分から始まり、これが無くなるとゲームオーバーです。
+	プラチナブロックを消したり、早くステージをクリアすれば、ゲーム全体の制限時間が増えます。
+	全20面ですが、ある条件を満たしているとエクストラステージを遊ぶことができます。
+
+NET-LINE
+	VS-LINEモードのネット対戦バージョンです。
+
+NET-STANDARD
+	VS-STANDARDモードのネット対戦バージョンです。
+
+NET-ULTRA
+	VS-ULTRAモードのネット対戦バージョンです。

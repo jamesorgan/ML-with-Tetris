@@ -1,0 +1,5 @@
+このフォルダにはリプレイファイルが置かれます。
+このファイル(placeholder.txt)は削除しても構いません。
+
+Replay files is put on this folder.
+You may delete this (placeholder.txt) file.
